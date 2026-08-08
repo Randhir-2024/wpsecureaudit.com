@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
   // Pass through copy for the CMS admin directory and uploaded assets
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   // Date formatting filter
   eleventyConfig.addFilter("postDate", (dateObj) => {
