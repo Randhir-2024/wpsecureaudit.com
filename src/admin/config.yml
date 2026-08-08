@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Randhir-2024/wpsecureaudit.com
   branch: main
+  base_url: http://38.159.122.106:8081
+  auth_endpoint: auth
 
 local_backend: true
 
