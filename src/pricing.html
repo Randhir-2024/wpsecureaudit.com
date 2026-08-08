@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing - WP Secure Audit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d8dadc",
+                        "tertiary-container": "#381d00",
+                        "on-surface-variant": "#43474d",
+                        "secondary-fixed": "#ffddb8",
+                        "surface-variant": "#e0e3e5",
+                        "secondary-container": "#fea619",
+                        "on-primary-fixed": "#001c37",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "on-tertiary-fixed-variant": "#613f1c",
+                        "secure-green": "#10B981",
+                        "on-secondary-fixed": "#2a1700",
+                        "inverse-primary": "#b0c8eb",
+                        "on-tertiary-fixed": "#2d1600",
+                        "critical-red": "#EF4444",
+                        "on-primary-fixed-variant": "#314865",
+                        "on-secondary": "#ffffff",
+                        "cyber-blue-deep": "#0A2540",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "on-surface": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "tertiary-fixed": "#ffdcbe",
+                        "surface-container-low": "#f2f4f6",
+                        "inverse-on-surface": "#eff1f3",
+                        "terminal-white": "#FFFFFF",
+                        "background": "#f7f9fb",
+                        "tertiary": "#1a0b00",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#eebd90",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#49607e",
+                        "surface-bright": "#f7f9fb",
+                        "secondary": "#855300",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#0a2540",
+                        "primary": "#000f22",
+                        "on-tertiary-container": "#ae835a",
+                        "surface-container": "#eceef0",
+                        "outline-variant": "#c4c6ce",
+                        "surface": "#f7f9fb",
+                        "on-secondary-container": "#684000",
+                        "surface-container-highest": "#e0e3e5",
+                        "cyber-blue-bright": "#0066FF",
+                        "surface-container-high": "#e6e8ea",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "on-background": "#191c1e",
+                        "alert-amber": "#F59E0B",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#74777e",
+                        "on-primary-container": "#768dad",
+                        "grid-line": "#E2E8F0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "max-width": "1280px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-caps": ["JetBrains Mono"],
+                        "body-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "code-md": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "code-md": ["14px", { "lineHeight": "20px", "fontWeight": "450" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-size: 32px 32px;
+            background-image: linear-gradient(to right, #E2E8F0 1px, transparent 1px), linear-gradient(to bottom, #E2E8F0 1px, transparent 1px);
+        }
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid #E2E8F0;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+        }
+        .audit-focus:hover {
+            box-shadow: 0 0 15px 4px rgba(0, 102, 255, 0.1);
+            border-color: #0066FF;
+            transition: all 0.3s ease;
+        }
+    </style>
+<meta content="Transparent pricing for WordPress penetration testing, security audits, and continuous monitoring plans." name="description"/>
+<link href="https://wpsecureaudit.com/pricing.html" rel="canonical"/>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col grid-bg relative">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest/70 dark:bg-cyber-blue-deep/70 backdrop-blur-xl border-b border-grid-line shadow-sm">
+<div class="flex justify-between items-center w-full px-4 lg:px-6 xl:px-margin-desktop max-w-max-width mx-auto h-20">
+<a href="index.html" class="font-bold text-lg lg:text-xl xl:text-2xl text-cyber-blue-deep dark:text-terminal-white tracking-tight whitespace-nowrap">
+                WP Secure Audit
+            </a>
+<nav class="hidden lg:flex items-center gap-3 xl:gap-6 whitespace-nowrap">
+<div class="relative group">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap inline-flex items-center gap-0.5" href="services.html">Services
+<span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="glass-panel bg-surface-container-lowest dark:bg-cyber-blue-deep rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72">
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-penetration-testing.html">WordPress Penetration Testing</a>
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-audit.html">WordPress Security Audit</a>
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-monitoring.html">WordPress Security Monitoring</a>
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-plugin-theme-security.html">Plugin & Theme Security</a>
+</div>
+</div>
+</div>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="continuous-security.html">Continuous Security</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="methodology.html">Methodology</a>
+<a class="text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="pricing.html">Pricing</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="case-studies.html">Case Studies</a>
+<div class="relative group">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap inline-flex items-center gap-0.5" href="resources.html">Resources
+<span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+</a>
+<div class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+<div class="glass-panel bg-surface-container-lowest dark:bg-cyber-blue-deep rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72">
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="blog.html">Blog</a>
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="security-guides.html">WordPress Security Guides</a>
+<a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="security-advisories.html">Security Advisories</a>
+</div>
+</div>
+</div>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="about.html">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="faq.html">FAQ</a>
+</nav>
+<div class="flex items-center gap-4">
+
+<a class="bg-cyber-blue-deep text-terminal-white font-label-caps text-label-caps px-4 py-2.5 lg:px-5 lg:py-3 rounded-DEFAULT hover:opacity-90 transition-opacity active:opacity-80 active:scale-95 transition-all inline-block whitespace-nowrap" href="contact.html">
+                    Request Audit
+                </a>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-32 pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-grid-line mb-4">
+<span class="w-2 h-2 rounded-full bg-cyber-blue-bright animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-cyber-blue-deep">Pricing Plans</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary mb-4 md:text-headline-xl text-headline-lg-mobile">Simple, Transparent Pricing</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Choose the right level of security assessment for your platform. From essential scans to deep-dive manual audits and continuous protection.
+                </p>
+</section>
+<!-- Pricing Cards (Bento/Asymmetric Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-24">
+<!-- Tier 1: Essential Audit -->
+<div class="bg-surface-container-lowest border border-grid-line rounded-lg p-8 flex flex-col relative overflow-hidden group hover:border-cyber-blue-bright transition-colors shadow-sm">
+<div class="mb-8 border-b border-grid-line pb-6">
+<span class="font-label-caps text-label-caps text-cyber-blue-bright bg-primary-fixed/20 px-3 py-1 rounded-full mb-4 inline-block">Small Infrastructure</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Essential Audit</h2>
+<div class="font-body-md text-body-md text-on-surface-variant">Fundamental security posture verification for standard WordPress deployments.</div>
+</div>
+<div class="flex-grow">
+<ul class="space-y-4 font-body-md text-body-md text-on-surface mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Automated vulnerability scanning
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Basic manual code review (themes/plugins)
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Standard PDF reporting
+                        </li>
+<li class="flex items-start gap-3 text-on-surface-variant/50">
+<span class="material-symbols-outlined">cancel</span>
+                            Zero-day exploit discovery
+                        </li>
+</ul>
+</div>
+<a href="contact.html?service=audit" class="w-full border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-label-caps py-4 rounded hover:bg-surface-container transition-colors inline-block text-center">
+                    Request Audit
+                </a>
+</div>
+<!-- Tier 2: Pro Penetration Test (Highlighted) -->
+<div class="bg-surface-container-lowest border border-cyber-blue-bright rounded-lg p-8 flex flex-col relative overflow-hidden transform md:-translate-y-4 shadow-[0_0_15px_rgba(0,102,255,0.1)]">
+<div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-bright"></div>
+<div class="mb-8 border-b border-grid-line pb-6">
+<span class="font-label-caps text-label-caps text-alert-amber bg-alert-amber/10 px-3 py-1 rounded-full mb-4 inline-flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-alert-amber animate-pulse"></span>
+                        E-Commerce / Complex
+                    </span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Pro Pen-Test</h2>
+<div class="font-body-md text-body-md text-on-surface-variant">Deep-dive manual penetration testing targeting critical business logic and data silos.</div>
+</div>
+<div class="flex-grow">
+<ul class="space-y-4 font-body-md text-body-md text-on-surface mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Deep manual source code analysis
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Business logic flaw identification
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Privilege escalation scenarios
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Actionable remediation roadmap
+                        </li>
+</ul>
+</div>
+<a href="contact.html?service=pentest" class="w-full bg-cyber-blue-deep text-on-primary font-label-caps text-label-caps py-4 rounded hover:bg-primary-container transition-colors shadow-sm inline-block text-center">
+                    Request Audit
+                </a>
+</div>
+<!-- Tier 3: Continuous Sentinel -->
+<div class="bg-primary border border-primary-container rounded-lg p-8 flex flex-col relative overflow-hidden text-on-primary">
+<div class="mb-8 border-b border-on-surface-variant/30 pb-6">
+<span class="font-label-caps text-label-caps text-terminal-white bg-on-surface-variant/30 px-3 py-1 rounded-full mb-4 inline-block">Enterprise Monitoring</span>
+<h2 class="font-headline-lg text-headline-lg text-terminal-white mb-2">Continuous Sentinel</h2>
+<div class="font-body-md text-body-md text-outline-variant">Ongoing threat modeling, monitoring, and regular micro-audits for dynamic environments.</div>
+</div>
+<div class="flex-grow">
+<ul class="space-y-4 font-body-md text-body-md text-terminal-white mb-8">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Pro Pen-Test features included
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Monthly micro-audits (new features)
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Real-time zero-day alerting
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Dedicated security engineer Slack channel
+                        </li>
+</ul>
+</div>
+<a href="contact.html?service=sentinel" class="w-full bg-alert-amber text-on-tertiary-fixed font-label-caps text-label-caps py-4 rounded hover:bg-alert-amber/90 transition-colors shadow-sm inline-block text-center">
+                    Request Sentinel
+                </a>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto bg-cyber-blue-deep dark:bg-primary-container border-t border-grid-line pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop max-w-max-width mx-auto">
+<div class="md:col-span-4 flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-terminal-white font-bold">
+                    WP Secure Audit
+                </div>
+<p class="font-body-sm text-body-sm text-surface-variant/70">
+                    Manual, expert-led WordPress penetration testing and security auditing. CEH-certified analysts, zero automated guesswork.
+                </p>
+<p class="font-body-sm text-body-sm text-surface-variant/50 mt-2">
+                    © 2026 WP Secure Audit. All rights reserved.
+                </p>
+</div>
+<div class="md:col-span-2 flex flex-col gap-3">
+<p class="font-label-caps text-label-caps text-terminal-white/80 mb-1">Services</p>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-penetration-testing.html">Penetration Testing</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-security-audit.html">Security Audit</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-security-monitoring.html">Security Monitoring</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-plugin-theme-security.html">Plugin &amp; Theme Security</a>
+</div>
+<div class="md:col-span-2 flex flex-col gap-3">
+<p class="font-label-caps text-label-caps text-terminal-white/80 mb-1">Resources</p>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="blog.html">Blog</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="security-guides.html">Security Guides</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="security-advisories.html">Security Advisories</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="case-studies.html">Case Studies</a>
+</div>
+<div class="md:col-span-2 flex flex-col gap-3">
+<p class="font-label-caps text-label-caps text-terminal-white/80 mb-1">Company</p>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="about.html">About</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="methodology.html">Methodology</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="pricing.html">Pricing</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<div class="md:col-span-2 flex flex-col gap-3">
+<p class="font-label-caps text-label-caps text-terminal-white/80 mb-1">Legal</p>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="privacy-policy.html">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="terms-of-service.html">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="responsible-disclosure.html">Responsible Disclosure</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/917485891019" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors flex items-center justify-center group" title="Chat on WhatsApp">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.618-1.016-5.08-2.87-6.936C16.292 2.012 13.834 1 11.218 1 5.817 1 1.417 5.4 1.415 10.803c-.001 1.543.415 3.05 1.202 4.398l-.986 3.604 3.7-.972zm11.758-5.385c-.328-.164-1.942-.958-2.242-1.069-.3-.11-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.712.082-.328-.164-1.386-.511-2.64-1.63-1.032-.922-1.636-2.062-1.838-2.408-.202-.346-.022-.533.143-.697.148-.148.328-.384.492-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.778-1.011-2.435-.267-.641-.539-.553-.738-.563-.19-.01-.41-.012-.629-.012-.219 0-.575.082-.876.411-.3.328-1.15 1.123-1.15 2.738 0 1.616 1.178 3.178 1.342 3.397.164.219 2.318 3.538 5.617 4.962.784.339 1.397.541 1.874.693.788.251 1.504.216 2.07.131.63-.094 1.942-.794 2.215-1.562.274-.767.274-1.425.192-1.562-.081-.137-.3-.219-.628-.383z"/>
+    </svg>
+    <span class="absolute right-14 bg-cyber-blue-deep text-terminal-white text-xs font-semibold px-3 py-1.5 rounded shadow-md opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap">
+        Chat on WhatsApp
+    </span>
+</a>
+</body>
+</html>

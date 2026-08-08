@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "src/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Post"
+    folder: "src/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", type: "hidden", default: "layouts/post.html"}
+      - {label: "Title", name: "title", type: "string"}
+      - {label: "Publish Date", name: "date", type: "datetime"}
+      - {label: "Description", name: "description", type: "text"}
+      - {label: "Author", name: "author", type: "string", default: "Security Team"}
+      - {label: "Body", name: "body", type: "markdown"}
+
+  - name: "guides"
+    label: "Security Guide"
+    folder: "src/guides"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", type: "hidden", default: "layouts/guide.html"}
+      - {label: "Title", name: "title", type: "string"}
+      - {label: "Publish Date", name: "date", type: "datetime"}
+      - {label: "Category", name: "category", type: "select", options: ["Basics", "Hardening", "Advanced"]}
+      - {label: "Description", name: "description", type: "text"}
+      - {label: "Body", name: "body", type: "markdown"}
+
+  - name: "advisories"
+    label: "Security Advisory"
+    folder: "src/advisories"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", type: "hidden", default: "layouts/advisory.html"}
+      - {label: "Title", name: "title", type: "string"}
+      - {label: "Vulnerability Type", name: "vuln_type", type: "string"}
+      - {label: "Severity", name: "severity", type: "select", options: ["Critical", "High", "Medium", "Low"]}
+      - {label: "CVE ID", name: "cve", type: "string", required: false}
+      - {label: "Publish Date", name: "date", type: "datetime"}
+      - {label: "Description", name: "description", type: "text"}
+      - {label: "Remediation", name: "remediation", type: "markdown"}
+      - {label: "Body", name: "body", type: "markdown"}
