@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Randhir-2024/wpsecureaudit.com
   branch: master
-  base_url: http://38.159.122.106:8081
+  base_url: https://wpsecureaudit.com
   auth_endpoint: auth
 
 local_backend: true
