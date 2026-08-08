@@ -10,6 +10,17 @@ module.exports = function(eleventyConfig) {
     return `${months[d.getMonth()]} ${d.getFullYear()}`;
   });
 
+  // Folder-based Collections definitions
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md");
+  });
+  eleventyConfig.addCollection("guides", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/guides/*.md");
+  });
+  eleventyConfig.addCollection("advisories", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/advisories/*.md");
+  });
+
   return {
     dir: {
       input: "src",
