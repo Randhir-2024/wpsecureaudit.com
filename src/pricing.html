@@ -205,104 +205,227 @@
                 </p>
 </section>
 <!-- Pricing Cards (Bento/Asymmetric Layout) -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-24">
-<!-- Tier 1: Essential Audit -->
-<div class="bg-surface-container-lowest border border-grid-line rounded-lg p-8 flex flex-col relative overflow-hidden group hover:border-cyber-blue-bright transition-colors shadow-sm">
-<div class="mb-8 border-b border-grid-line pb-6">
-<span class="font-label-caps text-label-caps text-cyber-blue-bright bg-primary-fixed/20 px-3 py-1 rounded-full mb-4 inline-block">Small Infrastructure</span>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Essential Audit</h2>
-<div class="font-body-md text-body-md text-on-surface-variant">Fundamental security posture verification for standard WordPress deployments.</div>
-</div>
-<div class="flex-grow">
-<ul class="space-y-4 font-body-md text-body-md text-on-surface mb-8">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Automated vulnerability scanning
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mb-24 items-stretch">
+            <!-- Tier 1: Essential WordPress VAPT -->
+            <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-8 flex flex-col relative overflow-hidden group hover:border-cyber-blue-bright transition-colors shadow-sm">
+                <div class="mb-6 pb-6 border-b border-grid-line">
+                    <span class="font-label-caps text-label-caps text-cyber-blue-bright bg-primary-fixed/20 px-3 py-1 rounded-full mb-4 inline-block">Small Business</span>
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Essential WordPress VAPT</h2>
+                    <div class="font-body-md text-body-md text-on-surface-variant">A focused security assessment for standard WordPress business websites.</div>
+                </div>
+                <div class="mb-6 flex items-baseline gap-1">
+                    <span class="font-headline-xl text-headline-xl text-primary">$399</span>
+                    <span class="text-on-surface-variant font-semibold text-lg">+</span>
+                </div>
+                <div class="flex-grow">
+                    <ul class="space-y-4 font-body-md text-body-md text-on-surface mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>WordPress Core Security Testing</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Basic manual code review (themes/plugins)
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Plugin Vulnerability Assessment</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Standard PDF reporting
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Theme Security Testing</span>
                         </li>
-<li class="flex items-start gap-3 text-on-surface-variant/50">
-<span class="material-symbols-outlined">cancel</span>
-                            Zero-day exploit discovery
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Authentication Testing</span>
                         </li>
-</ul>
-</div>
-<a href="contact.html?service=audit" class="w-full border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-label-caps py-4 rounded hover:bg-surface-container transition-colors inline-block text-center">
-                    Request Audit
-                </a>
-</div>
-<!-- Tier 2: Pro Penetration Test (Highlighted) -->
-<div class="bg-surface-container-lowest border border-cyber-blue-bright rounded-lg p-8 flex flex-col relative overflow-hidden transform md:-translate-y-4 shadow-[0_0_15px_rgba(0,102,255,0.1)]">
-<div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-bright"></div>
-<div class="mb-8 border-b border-grid-line pb-6">
-<span class="font-label-caps text-label-caps text-alert-amber bg-alert-amber/10 px-3 py-1 rounded-full mb-4 inline-flex items-center gap-2">
-<span class="w-2 h-2 rounded-full bg-alert-amber animate-pulse"></span>
-                        E-Commerce / Complex
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Authorization & Access Control</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>REST API & XML-RPC Testing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>OWASP-Based Security Testing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Manual Vulnerability Validation</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Security Configuration Review</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Detailed VAPT Report</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Remediation Recommendations</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Retesting of Identified Vulnerabilities</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <a href="contact.html?service=audit" class="w-full border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-label-caps py-4 rounded hover:bg-surface-container transition-colors inline-block text-center">
+                        Request VAPT
+                    </a>
+                    <p class="font-body-xs text-body-xs text-on-surface-variant text-center mt-3">Best for standard WordPress business websites.</p>
+                </div>
+            </div>
+            <!-- Tier 2: Professional WordPress VAPT (Highlighted) -->
+            <div class="bg-surface-container-lowest border border-cyber-blue-bright rounded-lg p-8 flex flex-col relative overflow-hidden transform md:-translate-y-4 shadow-[0_0_15px_rgba(0,102,255,0.1)]">
+                <div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-bright"></div>
+                <div class="mb-6 pb-6 border-b border-grid-line">
+                    <span class="font-label-caps text-label-caps text-cyber-blue-bright bg-cyber-blue-bright/10 px-3 py-1 rounded-full mb-4 inline-flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyber-blue-bright animate-pulse"></span>
+                        Business Critical
                     </span>
-<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Pro Pen-Test</h2>
-<div class="font-body-md text-body-md text-on-surface-variant">Deep-dive manual penetration testing targeting critical business logic and data silos.</div>
-</div>
-<div class="flex-grow">
-<ul class="space-y-4 font-body-md text-body-md text-on-surface mb-8">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Deep manual source code analysis
+                    <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Professional WordPress VAPT</h2>
+                    <div class="font-body-md text-body-md text-on-surface-variant">Deep manual penetration testing for business-critical WordPress websites.</div>
+                </div>
+                <div class="mb-6 flex items-baseline gap-1">
+                    <span class="font-headline-xl text-headline-xl text-primary">$699</span>
+                    <span class="text-on-surface-variant font-semibold text-lg">+</span>
+                </div>
+                <div class="flex-grow">
+                    <ul class="space-y-4 font-body-md text-body-md text-on-surface mb-8">
+                        <li class="flex items-start gap-3 font-semibold text-cyber-blue-deep">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Everything in Essential</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Business logic flaw identification
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Deep Manual Penetration Testing</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Privilege escalation scenarios
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Business Logic Testing</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Actionable remediation roadmap
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Privilege Escalation Testing</span>
                         </li>
-</ul>
-</div>
-<a href="contact.html?service=pentest" class="w-full bg-cyber-blue-deep text-on-primary font-label-caps text-label-caps py-4 rounded hover:bg-primary-container transition-colors shadow-sm inline-block text-center">
-                    Request Audit
-                </a>
-</div>
-<!-- Tier 3: Continuous Sentinel -->
-<div class="bg-primary border border-primary-container rounded-lg p-8 flex flex-col relative overflow-hidden text-on-primary">
-<div class="mb-8 border-b border-on-surface-variant/30 pb-6">
-<span class="font-label-caps text-label-caps text-terminal-white bg-on-surface-variant/30 px-3 py-1 rounded-full mb-4 inline-block">Enterprise Monitoring</span>
-<h2 class="font-headline-lg text-headline-lg text-terminal-white mb-2">Continuous Sentinel</h2>
-<div class="font-body-md text-body-md text-outline-variant">Ongoing threat modeling, monitoring, and regular micro-audits for dynamic environments.</div>
-</div>
-<div class="flex-grow">
-<ul class="space-y-4 font-body-md text-body-md text-terminal-white mb-8">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Pro Pen-Test features included
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Advanced Authentication Testing</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Monthly micro-audits (new features)
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Advanced Authorization Testing</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Real-time zero-day alerting
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Custom Plugin Testing</span>
                         </li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Dedicated security engineer Slack channel
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Custom Theme Testing</span>
                         </li>
-</ul>
-</div>
-<a href="contact.html?service=sentinel" class="w-full bg-alert-amber text-on-tertiary-fixed font-label-caps text-label-caps py-4 rounded hover:bg-alert-amber/90 transition-colors shadow-sm inline-block text-center">
-                    Request Sentinel
-                </a>
-</div>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>API & Endpoint Testing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Attack-Path Analysis</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Detailed Remediation Roadmap</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-secure-green" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Comprehensive Retesting</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <a href="contact.html?service=pentest" class="w-full bg-cyber-blue-deep text-on-primary font-label-caps text-label-caps py-4 rounded hover:bg-primary-container transition-colors shadow-sm inline-block text-center">
+                        Request Professional VAPT
+                    </a>
+                    <p class="font-body-xs text-body-xs text-on-surface-variant text-center mt-3">Recommended for business-critical WordPress websites.</p>
+                </div>
+            </div>
+            <!-- Tier 3: WP Secure Continuous (Dark Card / Visually Strongest) -->
+            <div class="bg-primary border border-primary-container rounded-lg p-8 flex flex-col relative overflow-hidden text-on-primary">
+                <div class="absolute top-0 right-0 bg-alert-amber text-primary font-bold font-label-caps text-[10px] px-3 py-1.5 rounded-bl shadow-sm">
+                    BEST VALUE
+                </div>
+                <div class="mb-6 pb-6 border-b border-on-surface-variant/30">
+                    <span class="font-label-caps text-label-caps text-alert-amber bg-alert-amber/20 px-3 py-1 rounded-full mb-4 inline-flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-alert-amber animate-pulse"></span>
+                        CONTINUOUS SECURITY
+                    </span>
+                    <h2 class="font-headline-lg text-headline-lg text-terminal-white mb-2">WP Secure Continuous</h2>
+                    <div class="font-body-md text-body-md text-outline-variant">Recurring WordPress penetration testing to identify vulnerabilities as your website changes.</div>
+                </div>
+                <div class="mb-6 flex items-baseline gap-1">
+                    <span class="font-headline-xl text-headline-xl text-terminal-white">$299</span>
+                    <span class="text-outline-variant font-semibold text-lg">/month</span>
+                </div>
+                <div class="flex-grow">
+                    <ul class="space-y-4 font-body-md text-body-md text-terminal-white mb-8">
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Initial Comprehensive WordPress VAPT</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Monthly Security Assessment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Monthly Security Report</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>New Plugin Vulnerability Review</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>WordPress Core Vulnerability Review</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Theme Security Review</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Website Change / Attack-Surface Review</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Targeted Manual Penetration Testing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Previous Finding Tracking</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Remediation Tracking</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Vulnerability Retesting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="material-symbols-outlined text-cyber-blue-bright" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            <span>Quarterly Comprehensive VAPT</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-auto">
+                    <a href="contact.html?service=sentinel" class="w-full bg-alert-amber text-on-tertiary-fixed font-label-caps text-label-caps py-4 rounded hover:bg-alert-amber/90 transition-colors shadow-sm inline-block text-center">
+                        Start Continuous Security
+                    </a>
+                    <p class="font-body-xs text-body-xs text-outline-variant text-center mt-3">Best for businesses that want ongoing WordPress security testing.</p>
+                </div>
+            </div>
 </div>
 </main>
 <!-- Footer -->
