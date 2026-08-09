@@ -250,11 +250,11 @@
 <main class="flex-grow pt-20">
 <section class="relative bg-grid-pattern py-margin-desktop overflow-hidden border-b border-grid-line dark:border-white/10">
 <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop max-w-3xl">
-<h1 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary dark:text-terminal-white mb-4">WordPress Security Guides</h1>
+<h1 class="font-headline-xl text-2xl md:text-headline-xl text-primary dark:text-terminal-white mb-2 md:mb-4">WordPress Security Guides</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant">Practical, step-by-step guides your team can act on today — no security background required.</p>
 </div>
 </section>
-<section class="py-margin-desktop bg-surface dark:bg-primary">
+<section class="py-8 md:py-margin-desktop bg-surface dark:bg-primary">
 <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter">
 {% for guide in collections.guides | reverse %}
 <a href="{{ guide.url }}" class="glass-panel rounded-xl border border-grid-line dark:border-white/10 audit-focus transition-all duration-300 p-8 flex flex-col gap-3 block">
@@ -262,8 +262,8 @@
 <span class="font-label-caps text-label-caps px-3 py-1 rounded-full bg-cyber-blue-deep/10 dark:bg-white/10 text-cyber-blue-deep dark:text-terminal-white">{{ guide.data.category or "HARDENING" }}</span>
 <span class="font-code-md text-code-md text-on-surface-variant dark:text-surface-variant text-xs">{{ guide.date | postDate }}</span>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary dark:text-terminal-white text-lg">{{ guide.data.title }}</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-surface-variant">{{ guide.data.description }}</p>
+<h3 class="font-headline-md text-sm md:text-lg text-primary dark:text-terminal-white">{{ guide.data.title }}</h3>
+<p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant dark:text-surface-variant">{{ guide.data.description }}</p>
 <span class="font-code-md text-code-md text-cyber-blue-bright inline-flex items-center gap-1">Read guide <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
 </a>
 {% endfor %}
