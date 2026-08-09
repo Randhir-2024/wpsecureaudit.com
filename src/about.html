@@ -130,12 +130,18 @@
 </head>
 <body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col grid-bg relative">
 <!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface-container-lowest/70 dark:bg-cyber-blue-deep/70 backdrop-blur-xl border-b border-grid-line shadow-sm">
-    <div class="flex justify-between items-center w-full px-4 lg:px-6 xl:px-margin-desktop max-w-max-width mx-auto h-20">
-        <a href="index.html" class="font-bold text-lg lg:text-xl xl:text-2xl text-cyber-blue-deep dark:text-terminal-white tracking-tight whitespace-nowrap">
-            WP Secure Audit
-        </a>
-        <nav class="hidden lg:flex items-center gap-4 xl:gap-8 whitespace-nowrap">
+<header class="fixed top-0 w-full z-50 bg-white dark:bg-[#070b19] border-b border-grid-line dark:border-white/10 shadow-sm transition-all duration-300">
+    <div class="grid grid-cols-3 items-center w-full px-6 lg:px-12 xl:px-16 max-w-[1400px] mx-auto h-20">
+        
+        <!-- Left: Logo text -->
+        <div class="flex justify-start">
+            <a href="index.html" class="font-bold text-lg lg:text-xl xl:text-2xl text-cyber-blue-deep dark:text-terminal-white tracking-tight whitespace-nowrap">
+                WP Secure Audit
+            </a>
+        </div>
+
+        <!-- Center: Navigation Items (Centered) -->
+        <nav class="hidden lg:flex justify-center items-center gap-4 xl:gap-8 whitespace-nowrap">
             
             <!-- Solutions Dropdown -->
             <div class="relative group">
@@ -143,14 +149,14 @@
                     Solutions
                     <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
                 </a>
-                <div class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    <div class="glass-panel bg-surface-container-lowest dark:bg-cyber-blue-deep rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72">
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-penetration-testing.html">WordPress Penetration Testing</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-audit.html">WordPress Security Audit</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-monitoring.html">WordPress Security Monitoring</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-plugin-theme-security.html">Plugin & Theme Security</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors border-t border-grid-line dark:border-white/10" href="continuous-security.html">Continuous Security Program</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="methodology.html">Audit Methodology</a>
+                <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="glass-panel bg-white dark:bg-[#0b1226] rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72 mt-1">
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-penetration-testing.html">WordPress Penetration Testing</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-audit.html">WordPress Security Audit</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-monitoring.html">WordPress Security Monitoring</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-plugin-theme-security.html">Plugin & Theme Security</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors border-t border-grid-line dark:border-white/10" href="continuous-security.html">Continuous Security Program</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="methodology.html">Audit Methodology</a>
                     </div>
                 </div>
             </div>
@@ -164,13 +170,13 @@
                     Resources
                     <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
                 </a>
-                <div class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                    <div class="glass-panel bg-surface-container-lowest dark:bg-cyber-blue-deep rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72">
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="blog.html">Blog</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="security-guides.html">WordPress Security Guides</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="security-advisories.html">Security Advisories</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors border-t border-grid-line dark:border-white/10" href="case-studies.html">Case Studies</a>
-                        <a class="block px-4 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="faq.html">FAQs</a>
+                <div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div class="glass-panel bg-white dark:bg-[#0b1226] rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72 mt-1">
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="blog.html">Blog</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="security-guides.html">WordPress Security Guides</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="security-advisories.html">Security Advisories</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors border-t border-grid-line dark:border-white/10" href="case-studies.html">Case Studies</a>
+                        <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="faq.html">FAQs</a>
                     </div>
                 </div>
             </div>
@@ -179,8 +185,10 @@
             <a class="text-cyber-blue-bright dark:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="about.html">About</a>
 
         </nav>
-        <div class="flex items-center gap-4">
-            <a class="bg-cyber-blue-deep text-terminal-white font-label-caps text-label-caps px-4 py-2.5 lg:px-5 lg:py-3 rounded-DEFAULT hover:opacity-90 transition-opacity active:opacity-80 active:scale-95 transition-all inline-block whitespace-nowrap" href="contact.html">
+
+        <!-- Right: CTA Button -->
+        <div class="flex justify-end">
+            <a class="bg-[#09132c] dark:bg-cyber-blue-bright text-terminal-white font-semibold text-xs lg:text-[13px] xl:text-sm px-6 py-3 rounded hover:opacity-90 active:scale-95 transition-all whitespace-nowrap" href="contact.html">
                 Request Audit
             </a>
         </div>
