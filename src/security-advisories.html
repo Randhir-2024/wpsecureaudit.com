@@ -186,9 +186,64 @@
             </nav>
 
             <!-- CTA Button -->
-            <a class="bg-[#09132c] dark:bg-cyber-blue-bright text-terminal-white font-semibold text-xs lg:text-[13px] xl:text-sm px-6 py-3 rounded hover:opacity-90 active:scale-95 transition-all whitespace-nowrap" href="contact.html">
+            <a class="hidden sm:inline-block bg-[#09132c] dark:bg-cyber-blue-bright text-terminal-white font-semibold text-xs lg:text-[13px] xl:text-sm px-6 py-3 rounded hover:opacity-90 active:scale-95 transition-all whitespace-nowrap" href="contact.html">
                 Request Audit
             </a>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="lg:hidden text-cyber-blue-deep dark:text-terminal-white focus:outline-none p-1.5 flex items-center justify-center rounded hover:bg-surface-container dark:hover:bg-white/5 transition-colors" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-[28px] pointer-events-none">menu</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Drawer (Slide-out or Fade-in Overlay) -->
+    <div id="mobile-menu" class="fixed inset-0 top-20 z-40 bg-white dark:bg-[#070b19] border-t border-grid-line dark:border-white/10 hidden flex-col px-6 py-8 overflow-y-auto lg:hidden transition-all duration-300">
+        <div class="flex flex-col justify-between min-h-[calc(100vh-140px)] w-full">
+            <div class="flex flex-col gap-6 w-full mb-8">
+                <!-- Solutions Section -->
+                <div class="flex flex-col gap-2">
+                    <button class="mobile-dropdown-btn text-left font-semibold text-base text-cyber-blue-deep dark:text-terminal-white flex justify-between items-center w-full py-2 border-b border-grid-line dark:border-white/5">
+                        Solutions
+                        <span class="material-symbols-outlined transition-transform duration-200">expand_more</span>
+                    </button>
+                    <div class="mobile-dropdown-content hidden flex-col pl-4 gap-3 mt-1">
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="service-penetration-testing.html">WordPress Penetration Testing</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="service-security-audit.html">WordPress Security Audit</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="service-security-monitoring.html">WordPress Security Monitoring</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="service-plugin-theme-security.html">Plugin & Theme Security</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1 font-semibold border-t border-grid-line dark:border-white/5 pt-2" href="continuous-security.html">Continuous Security Program</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="methodology.html">Audit Methodology</a>
+                    </div>
+                </div>
+
+                <!-- Pricing Link -->
+                <a class="font-semibold text-base text-cyber-blue-deep dark:text-terminal-white py-2 border-b border-grid-line dark:border-white/5" href="pricing.html">Pricing</a>
+
+                <!-- Resources Section -->
+                <div class="flex flex-col gap-2">
+                    <button class="mobile-dropdown-btn text-left font-semibold text-base text-cyber-blue-deep dark:text-terminal-white flex justify-between items-center w-full py-2 border-b border-grid-line dark:border-white/5">
+                        Resources
+                        <span class="material-symbols-outlined transition-transform duration-200">expand_more</span>
+                    </button>
+                    <div class="mobile-dropdown-content hidden flex-col pl-4 gap-3 mt-1">
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="blog.html">Blog</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="security-guides.html">WordPress Security Guides</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="security-advisories.html">Security Advisories</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1 border-t border-grid-line dark:border-white/5 pt-2" href="case-studies.html">Case Studies</a>
+                        <a class="text-sm text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright py-1" href="faq.html">FAQs</a>
+                    </div>
+                </div>
+
+                <!-- About Link -->
+                <a class="font-semibold text-base text-cyber-blue-deep dark:text-terminal-white py-2 border-b border-grid-line dark:border-white/5" href="about.html">About</a>
+            </div>
+
+            <!-- Mobile CTA Button -->
+            <div class="mt-auto pt-6 border-t border-grid-line dark:border-white/5">
+                <a class="w-full bg-[#09132c] dark:bg-cyber-blue-bright text-terminal-white font-semibold py-3.5 rounded-lg text-center block text-sm" href="contact.html">
+                    Request Audit
+                </a>
+            </div>
         </div>
     </div>
 </header>
@@ -361,5 +416,51 @@ function wp_verify_nonce( $nonce, $action = -1 ) {
         Chat on WhatsApp
     </span>
 </a>
+
+<!-- Mobile Menu Handler -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (toggleBtn && mobileMenu) {
+            toggleBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex');
+                    toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[28px] pointer-events-none">close</span>';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[28px] pointer-events-none">menu</span>';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+        
+        // Mobile dropdowns accordion toggle
+        const dropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (content) {
+                    const isHidden = content.classList.contains('hidden');
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        content.classList.add('flex');
+                        if (icon) icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        content.classList.remove('flex');
+                        if (icon) icon.style.transform = '';
+                    }
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

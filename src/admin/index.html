@@ -23,5 +23,51 @@
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  </body>
+  
+<!-- Mobile Menu Handler -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (toggleBtn && mobileMenu) {
+            toggleBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenu.classList.add('flex');
+                    toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[28px] pointer-events-none">close</span>';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('flex');
+                    toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[28px] pointer-events-none">menu</span>';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+        
+        // Mobile dropdowns accordion toggle
+        const dropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.material-symbols-outlined');
+                if (content) {
+                    const isHidden = content.classList.contains('hidden');
+                    if (isHidden) {
+                        content.classList.remove('hidden');
+                        content.classList.add('flex');
+                        if (icon) icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        content.classList.remove('flex');
+                        if (icon) icon.style.transform = '';
+                    }
+                }
+            });
+        });
+    });
+</script>
+</body>
 </html>
