@@ -249,7 +249,7 @@
 </header>
 
 <!-- Main Content Layout -->
-<main class="pt-32 pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<main class="pt-20 md:pt-32 pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <!-- Sidebar Navigation -->
 <aside class="hidden md:block md:col-span-3 sticky top-32 h-fit glass-panel p-6 rounded-lg">
 <h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase tracking-wider">Audit Phases</h3>
@@ -281,15 +281,15 @@
 </ul>
 </aside>
 <!-- Content Area -->
-<div class="col-span-1 md:col-span-9 space-y-16">
+<div class="col-span-1 md:col-span-9 space-y-8 md:space-y-16">
 <!-- Hero Section -->
 <section class="mb-16">
 <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-grid-line mb-4">
 <span class="w-2 h-2 rounded-full bg-cyber-blue-bright animate-pulse"></span>
 <span class="font-label-caps text-label-caps text-cyber-blue-deep">Process Overview</span>
 </div>
-<h1 class="leading-snug font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-4">Our Technical Methodology</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+<h1 class="leading-snug font-headline-xl text-2xl md:text-headline-xl text-primary mb-2 md:mb-4">Our Technical Methodology</h1>
+<p class="font-body-lg text-xs md:text-body-lg text-on-surface-variant max-w-2xl">
                     We employ a rigorous, multi-layered approach to WordPress security auditing, combining automated scanning with deep manual source code analysis to uncover vulnerabilities that automated tools miss.
                 </p>
 </section>
@@ -299,7 +299,7 @@
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
 <span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="radar">radar</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-primary md:text-headline-lg text-headline-lg-mobile">1. Reconnaissance &amp; Discovery</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">1. Reconnaissance &amp; Discovery</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
@@ -327,18 +327,18 @@
 <span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
 <span class="font-label-caps text-label-caps text-cyber-blue-bright">WPScan / Nmap</span>
 </div>
-<pre class="font-code-md text-code-md text-terminal-white/90 overflow-x-auto"><code>$ wpscan --url https://target.com \
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ wpscan --url https://target.com \
   --enumerate vp,vt,tt,cb,dbe,u \
   --api-token [REDACTED] \
   --random-user-agent</code></pre>
 </div>
 </div>
 <!-- Pro-Tip Card -->
-<div class="glass-panel p-6 rounded-lg flex items-start gap-4 border-l-4 border-l-alert-amber">
+<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
 <span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
 <h4 class="font-label-caps text-label-caps text-on-surface mb-1">Security Insight</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
+<p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
                             Inactive plugins represent a significant security risk. Even if deactivated, their files remain accessible on the server and can often be exploited directly if they contain vulnerabilities like unauthenticated file uploads.
                         </p>
 </div>
@@ -351,7 +351,7 @@
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
 <span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="bug_report">bug_report</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-primary md:text-headline-lg text-headline-lg-mobile">2. Vulnerability Assessment</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">2. Vulnerability Assessment</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
@@ -379,17 +379,17 @@
 <span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
 <span class="font-label-caps text-label-caps text-cyber-blue-bright">Nuclei / WPScan API</span>
 </div>
-<pre class="font-code-md text-code-md text-terminal-white/90 overflow-x-auto"><code>$ nuclei -u https://target.com \
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ nuclei -u https://target.com \
   -t cves/ -t default-logins/ \
   -severity critical,high,medium</code></pre>
 </div>
 </div>
 <!-- Pro-Tip Card -->
-<div class="glass-panel p-6 rounded-lg flex items-start gap-4 border-l-4 border-l-alert-amber">
+<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
 <span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
 <h4 class="font-label-caps text-label-caps text-on-surface mb-1">Assessment Insight</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
+<p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
                             Automated scanners are excellent for detecting known signatures, but they miss logical bypasses and zero-day flaws. A vulnerability assessment provides the structural scan, laying the groundwork for manual exploit testing.
                         </p>
 </div>
@@ -402,7 +402,7 @@
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
 <span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="terminal">terminal</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-primary md:text-headline-lg text-headline-lg-mobile">3. Manual Exploitation &amp; Analysis</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">3. Manual Exploitation &amp; Analysis</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
@@ -430,17 +430,17 @@
 <span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
 <span class="font-label-caps text-label-caps text-cyber-blue-bright">Burp Suite / SQLmap</span>
 </div>
-<pre class="font-code-md text-code-md text-terminal-white/90 overflow-x-auto"><code>$ sqlmap -u "https://target.com/wp-admin/admin-ajax.php?action=vuln_ajax" \
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ sqlmap -u "https://target.com/wp-admin/admin-ajax.php?action=vuln_ajax" \
   --data="id=1" --cookie="wordpress_logged_in_..." \
   --dbs --batch</code></pre>
 </div>
 </div>
 <!-- Pro-Tip Card -->
-<div class="glass-panel p-6 rounded-lg flex items-start gap-4 border-l-4 border-l-alert-amber">
+<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
 <span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
 <h4 class="font-label-caps text-label-caps text-on-surface mb-1">Exploitation Insight</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
+<p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
                             Proof-of-concept exploits are critical because they rule out false positives. By safely demonstrating the exploit vector, we help development teams understand exactly how an attacker would bypass their security controls.
                         </p>
 </div>
@@ -453,7 +453,7 @@
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
 <span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="article">article</span>
 </div>
-<h2 class="font-headline-lg text-headline-lg text-primary md:text-headline-lg text-headline-lg-mobile">4. Reporting &amp; Remediation</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">4. Reporting &amp; Remediation</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
@@ -481,18 +481,18 @@
 <span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
 <span class="font-label-caps text-label-caps text-cyber-blue-bright">Vulnerability Report</span>
 </div>
-<pre class="font-code-md text-code-md text-terminal-white/90 overflow-x-auto"><code>Finding: SQL Injection in Custom Ajax Plugin
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>Finding: SQL Injection in Custom Ajax Plugin
 Severity: Critical (CVSS 9.8)
 Status: Pending Fix
 Remediation: Sanitize 'id' input using absint() or prepare() statements.</code></pre>
 </div>
 </div>
 <!-- Pro-Tip Card -->
-<div class="glass-panel p-6 rounded-lg flex items-start gap-4 border-l-4 border-l-alert-amber">
+<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
 <span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
 <h4 class="font-label-caps text-label-caps text-on-surface mb-1">Remediation Insight</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
+<p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
                             A security audit is only as good as its remediation. Our reports focus on developer-friendly code fixes and sysadmin-ready configuration changes rather than generic warnings, ensuring swift and accurate resolution.
                         </p>
 </div>
