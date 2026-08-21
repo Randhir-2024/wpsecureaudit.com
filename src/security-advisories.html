@@ -317,18 +317,19 @@
                     </h2>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-gutter">
 <!-- Guide Card 1 -->
-<div class="audit-card rounded-lg p-6 flex flex-col group">
-<div class="mb-4 text-cyber-blue-bright">
-<span class="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform">description</span>
+<div class="audit-card rounded-lg p-4 md:p-6 flex flex-col justify-between group">
+<div>
+<div class="mb-2 text-cyber-blue-bright">
+<span class="material-symbols-outlined text-[28px] md:text-[32px] group-hover:scale-110 transition-transform">description</span>
 </div>
-<h3 class="font-body-lg text-body-lg text-primary font-semibold mb-2">Enterprise Hardening Checklist</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-grow">A comprehensive 50-point checklist for securing high-traffic enterprise WordPress deployments before going into production.</p>
-<a href="assets/downloads/enterprise-hardening-checklist.pdf" download class="bg-transparent border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-label-caps px-4 py-2 rounded hover:bg-cyber-blue-deep hover:text-terminal-white transition-colors flex items-center justify-center gap-2 w-full text-center">
-                                Download PDF <span class="material-symbols-outlined text-[16px]">download</span>
+<h3 class="font-body-md text-xs md:text-body-lg text-primary font-semibold mb-4">Enterprise Hardening Checklist</h3>
+</div>
+<a href="assets/downloads/enterprise-hardening-checklist.pdf" download class="bg-transparent border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-xs md:text-label-caps px-3 py-2 md:px-4 md:py-2 rounded hover:bg-cyber-blue-deep hover:text-terminal-white transition-colors flex items-center justify-center gap-1.5 w-full text-center">
+                                Download PDF <span class="material-symbols-outlined text-[14px]">download</span>
 </a>
 </div>
 <!-- Guide Card 2 -->
-<div class="audit-card rounded-lg p-6 flex flex-col group relative overflow-hidden bg-slate-900 border-none text-terminal-white">
+<div class="audit-card rounded-lg p-4 md:p-6 flex flex-col justify-between group relative overflow-hidden bg-slate-900 border-none text-terminal-white">
 <!-- Code snippet background overlay -->
 <div class="absolute inset-0 opacity-10 pointer-events-none p-4 font-code-md text-[10px] overflow-hidden whitespace-pre">
 function wp_verify_nonce( $nonce, $action = -1 ) {
@@ -339,24 +340,26 @@ function wp_verify_nonce( $nonce, $action = -1 ) {
         $uid = apply_filters( 'nonce_user_logged_out', $uid, $action );
     }
                             </div>
-<div class="mb-4 text-secure-green relative z-10">
-<span class="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform">code</span>
+<div>
+<div class="mb-2 text-secure-green relative z-10">
+<span class="material-symbols-outlined text-[28px] md:text-[32px] group-hover:scale-110 transition-transform">code</span>
 </div>
-<h3 class="font-body-lg text-body-lg text-terminal-white font-semibold mb-2 relative z-10">Secure Development Standards</h3>
-<p class="font-body-sm text-body-sm text-outline-variant mb-6 flex-grow relative z-10">Guidelines for writing secure custom plugins and themes, focusing on sanitization, escaping, and nonces.</p>
-<a href="assets/downloads/secure-development-standards.pdf" download class="bg-secure-green text-primary font-label-caps text-label-caps px-4 py-2 rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-2 w-full relative z-10 text-center">
-                                Download PDF <span class="material-symbols-outlined text-[16px]">download</span>
+<h3 class="font-body-md text-xs md:text-body-lg text-terminal-white font-semibold mb-4 relative z-10">Secure Development Standards</h3>
+</div>
+<a href="assets/downloads/secure-development-standards.pdf" download class="bg-secure-green text-primary font-label-caps text-xs md:text-label-caps px-3 py-2 md:px-4 md:py-2 rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-1.5 w-full relative z-10 text-center">
+                                Download PDF <span class="material-symbols-outlined text-[14px]">download</span>
 </a>
 </div>
 <!-- Guide Card 3 -->
-<div class="audit-card rounded-lg p-6 flex flex-col group">
-<div class="mb-4 text-cyber-blue-bright">
-<span class="material-symbols-outlined text-[32px] group-hover:scale-110 transition-transform">policy</span>
+<div class="audit-card rounded-lg p-4 md:p-6 flex flex-col justify-between group">
+<div>
+<div class="mb-2 text-cyber-blue-bright">
+<span class="material-symbols-outlined text-[28px] md:text-[32px] group-hover:scale-110 transition-transform">policy</span>
 </div>
-<h3 class="font-body-lg text-body-lg text-primary font-semibold mb-2">Incident Response Playbook</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 flex-grow">Step-by-step procedures for identifying, containing, and recovering from a compromised WordPress installation.</p>
-<a href="assets/downloads/incident-response-playbook.pdf" download class="bg-transparent border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-label-caps px-4 py-2 rounded hover:bg-cyber-blue-deep hover:text-terminal-white transition-colors flex items-center justify-center gap-2 w-full text-center">
-                                Download PDF <span class="material-symbols-outlined text-[16px]">download</span>
+<h3 class="font-body-md text-xs md:text-body-lg text-primary font-semibold mb-4">Incident Response Playbook</h3>
+</div>
+<a href="assets/downloads/incident-response-playbook.pdf" download class="bg-transparent border border-cyber-blue-deep text-cyber-blue-deep font-label-caps text-xs md:text-label-caps px-3 py-2 md:px-4 md:py-2 rounded hover:bg-cyber-blue-deep hover:text-terminal-white transition-colors flex items-center justify-center gap-1.5 w-full text-center">
+                                Download PDF <span class="material-symbols-outlined text-[14px]">download</span>
 </a>
 </div>
 </div>
