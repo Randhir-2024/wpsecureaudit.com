@@ -259,7 +259,7 @@
             <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant mb-4"><strong>Vulnerability Type:</strong> {{ vuln_type }}</p>
             <p class="font-code-md text-code-md text-on-surface-variant dark:text-surface-variant text-xs">Published: {{ date | postDate }}</p>
         </header>
-        <div class="glass-panel p-6 rounded-xl border border-grid-line dark:border-white/10 mb-8 bg-red-500/5">
+        <div class="glass-panel p-3 md:p-6 rounded-xl border border-grid-line dark:border-white/10 mb-8 bg-red-500/5">
             <h3 class="font-headline-sm text-headline-sm text-alert-amber mb-3">Remediation Action</h3>
             <div class="font-body-md text-body-md text-on-surface dark:text-terminal-white leading-relaxed prose dark:prose-invert">
                 {{ remediation | safe }}
