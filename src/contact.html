@@ -318,12 +318,16 @@
 <div>
 <label class="font-label-caps text-[10px] md:text-label-caps text-on-surface-variant dark:text-surface-variant block mb-1.5" for="service">SERVICE OF INTEREST</label>
 <select class="w-full bg-surface-container-low dark:bg-white/5 border border-grid-line dark:border-white/10 rounded-DEFAULT px-3 py-2 md:px-4 md:py-3 font-code-md text-xs md:text-code-md text-primary dark:text-terminal-white focus:border-cyber-blue-bright focus:ring-cyber-blue-bright" id="service" name="service">
-<option>WordPress Penetration Testing</option>
-<option>WordPress Security Audit</option>
-<option>WordPress Security Monitoring</option>
-<option>Plugin &amp; Theme Security</option>
-<option>Continuous Security Program</option>
-<option>Not sure yet</option>
+<option value="Growth Pack ($799/mo)">Growth Pack ($799/mo) — Certified VAPT, Full SEO &amp; Care (Recommended)</option>
+<option value="Starter Pack ($299/mo)">Starter Pack ($299/mo) — CMS Scanning &amp; Starter SEO</option>
+<option value="Elite Pack ($1,499/mo)">Elite Pack ($1,499/mo) — Full-Scope VAPT, PR, WAF &amp; 6h Dev</option>
+<option value="WordPress Penetration Testing">WordPress Penetration Testing (Black-Box VAPT)</option>
+<option value="WordPress Security Audit">WordPress Security Audit (White-Box Audit)</option>
+<option value="WordPress Growth &amp; Technical SEO">WordPress Growth &amp; Technical SEO</option>
+<option value="Managed WordPress Care &amp; Maintenance">Managed WordPress Care &amp; Maintenance</option>
+<option value="Plugin &amp; Theme Security">Plugin &amp; Theme Security Audit</option>
+<option value="WordPress Security Monitoring">WordPress 24/7 Security Monitoring</option>
+<option value="Custom Quote / One-Time Audit">Custom Quote / One-Time Audit</option>
 </select>
 </div>
 <div>
@@ -508,6 +512,57 @@
                 }
             });
         });
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const planParam = urlParams.get('plan');
+        const serviceParam = urlParams.get('service');
+        const selectElem = document.getElementById('service');
+        const detailsElem = document.getElementById('details');
+
+        let selectedName = "";
+
+        if (planParam === 'starter') {
+            selectedName = "Starter Pack ($299/mo)";
+        } else if (planParam === 'growth') {
+            selectedName = "Growth Pack ($799/mo)";
+        } else if (planParam === 'elite') {
+            selectedName = "Elite Pack ($1,499/mo)";
+        } else if (serviceParam === 'seo') {
+            selectedName = "WordPress Growth & Technical SEO";
+        } else if (serviceParam === 'management' || serviceParam === 'care') {
+            selectedName = "Managed WordPress Care & Maintenance";
+        } else if (serviceParam === 'pentest') {
+            selectedName = "WordPress Penetration Testing";
+        } else if (serviceParam === 'audit') {
+            selectedName = "WordPress Security Audit";
+        }
+
+        if (selectedName && selectElem) {
+            for (let i = 0; i < selectElem.options.length; i++) {
+                if (selectElem.options[i].value.includes(selectedName) || selectElem.options[i].text.includes(selectedName)) {
+                    selectElem.selectedIndex = i;
+                    break;
+                }
+            }
+
+            // Create visible selected badge banner above form
+            const form = selectElem.closest('form');
+            if (form) {
+                const banner = document.createElement('div');
+                banner.className = "bg-cyber-blue-bright/10 border border-cyber-blue-bright text-cyber-blue-bright px-4 py-3 rounded-lg text-xs md:text-sm font-semibold flex items-center justify-between mb-2";
+                banner.innerHTML = `
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-base">check_circle</span>
+                        <span>Selected Package: <strong>${selectedName}</strong></span>
+                    </div>
+                    <span class="text-[11px] opacity-80 uppercase tracking-wide">Pre-filled</span>
+                `;
+                form.insertBefore(banner, form.firstChild);
+            }
+        }
     });
 </script>
 </body>
