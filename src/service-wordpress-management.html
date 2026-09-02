@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Managed WordPress Care &amp; Maintenance Services | WP Secure Audit</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "surface": "#F8FAFC",
+                        "surface-container": "#F1F5F9",
+                        "surface-container-low": "#F8FAFC",
+                        "surface-container-lowest": "#FFFFFF",
+                        "surface-container-high": "#E2E8F0",
+                        "surface-container-highest": "#CBD5E1",
+                        "on-surface": "#0F172A",
+                        "on-surface-variant": "#475569",
+                        "surface-variant": "#E2E8F0",
+                        "primary": "#0F172A",
+                        "on-primary": "#FFFFFF",
+                        "primary-container": "#1E293B",
+                        "on-primary-container": "#F8FAFC",
+                        "cyber-blue-bright": "#0066FF",
+                        "cyber-blue-deep": "#0A2540",
+                        "terminal-white": "#F8FAFC",
+                        "secure-green": "#10B981",
+                        "alert-amber": "#F59E0B",
+                        "alert-red": "#EF4444",
+                        "grid-line": "#E2E8F0",
+                    },
+                    fontFamily: {
+                        "body-lg": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "body-sm": ["Inter", "sans-serif"],
+                        "body-xs": ["Inter", "sans-serif"],
+                        "label-caps": ["JetBrains Mono", "monospace"],
+                        "code-md": ["JetBrains Mono", "monospace"],
+                        "headline-xl": ["Inter", "sans-serif"],
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "headline-sm": ["Inter", "sans-serif"],
+                    },
+                    fontSize: {
+                        "headline-xl": ["40px", { "lineHeight": "48px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "code-md": ["14px", { "lineHeight": "20px", "fontWeight": "450" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .grid-bg {
+            background-size: 32px 32px;
+            background-image: linear-gradient(to right, #E2E8F0 1px, transparent 1px), linear-gradient(to bottom, #E2E8F0 1px, transparent 1px);
+        }
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid #E2E8F0;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+        }
+        .audit-focus:hover {
+            box-shadow: 0 0 15px 4px rgba(0, 102, 255, 0.1);
+            border-color: #0066FF;
+            transition: all 0.3s ease;
+        }
+    </style>
+<meta content="Managed WordPress maintenance, staging-tested updates, daily verified backups, 24/7 uptime monitoring, emergency malware cleanup, and reserved monthly developer hours." name="description"/>
+<link href="https://wpsecureaudit.com/service-wordpress-management.html" rel="canonical"/>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="alternate icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col grid-bg relative">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white dark:bg-[#070b19] border-b border-grid-line dark:border-white/10 shadow-sm transition-all duration-300">
+    <div class="flex justify-between items-center w-full px-6 lg:px-12 xl:px-16 max-w-[1400px] mx-auto h-20">
+        
+        <!-- Left: Brand Logo -->
+        <a href="/" class="flex items-center py-1 group">
+            <img src="assets/images/logo.svg" alt="WP Secure Audit" class="h-14 sm:h-16 md:h-[68px] w-auto object-contain transition-transform group-hover:scale-105" />
+        </a>
+
+        <!-- Right Side: Links and CTA Button Grouped Together -->
+        <div class="flex items-center gap-6 xl:gap-10 h-full">
+            <nav class="hidden lg:flex items-center gap-4 xl:gap-8 whitespace-nowrap h-full">
+                
+                <!-- Solutions Dropdown -->
+                <div class="relative group h-full flex items-center">
+                    <a class="text-cyber-blue-bright dark:text-cyber-blue-bright inline-flex items-center gap-0.5 transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="services.html">
+                        Solutions
+                        <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+                    </a>
+                    <div class="absolute right-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                                <div class="glass-panel bg-white dark:bg-[#0b1226] rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72 mt-1">
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-penetration-testing.html">WordPress Penetration Testing</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-audit.html">WordPress Security Audit</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-wordpress-seo.html">WordPress Growth &amp; Technical SEO</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-wordpress-management.html">Managed WordPress Care &amp; Maintenance</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-plugin-theme-security.html">Plugin &amp; Theme Security</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-monitoring.html">WordPress Security Monitoring</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors border-t border-grid-line dark:border-white/10" href="pricing.html">All-In-One Bundled Plans</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Link -->
+                <a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="pricing.html">Pricing</a>
+
+                <!-- Resources Dropdown -->
+                <div class="relative group h-full flex items-center">
+                    <a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright inline-flex items-center gap-0.5 transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="resources.html">
+                        Resources
+                        <span class="material-symbols-outlined text-base transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+                    </a>
+                    <div class="absolute right-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                                <div class="glass-panel bg-white dark:bg-[#0b1226] rounded-lg border border-grid-line dark:border-white/10 shadow-lg py-2 w-72 mt-1">
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-penetration-testing.html">WordPress Penetration Testing</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-audit.html">WordPress Security Audit</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-wordpress-seo.html">WordPress Growth &amp; Technical SEO</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-wordpress-management.html">Managed WordPress Care &amp; Maintenance</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-plugin-theme-security.html">Plugin &amp; Theme Security</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors" href="service-security-monitoring.html">WordPress Security Monitoring</a>
+                            <a class="block px-5 py-3 text-sm font-body-md text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright hover:bg-surface-container-low dark:hover:bg-white/5 transition-colors border-t border-grid-line dark:border-white/10" href="pricing.html">All-In-One Bundled Plans</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Link -->
+                <a class="text-on-surface-variant dark:text-surface-variant hover:text-cyber-blue-bright transition-colors duration-200 font-semibold text-xs lg:text-[13px] xl:text-sm whitespace-nowrap" href="about.html">About</a>
+
+            </nav>
+
+            <!-- CTA Button -->
+            <a class="hidden lg:inline-block bg-[#09132c] dark:bg-cyber-blue-bright text-terminal-white font-semibold text-xs lg:text-[13px] xl:text-sm px-6 py-3 rounded hover:opacity-90 active:scale-95 transition-all whitespace-nowrap" href="contact.html">
+                Request Audit
+            </a>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-toggle" class="lg:hidden text-cyber-blue-deep dark:text-terminal-white focus:outline-none p-1.5 flex items-center justify-center rounded hover:bg-surface-container dark:hover:bg-white/5 transition-colors" aria-label="Toggle Menu">
+                <span class="material-symbols-outlined text-[28px] pointer-events-none">menu</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow pt-24 pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+    <!-- Hero Section -->
+    <section class="mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-grid-line mb-4">
+            <span class="w-2 h-2 rounded-full bg-secure-green animate-pulse"></span>
+            <span class="font-label-caps text-label-caps text-cyber-blue-deep">WordPress Care &amp; Maintenance Pillar</span>
+        </div>
+        <h1 class="leading-snug font-headline-xl text-headline-lg-mobile md:text-headline-xl text-primary mb-4">Managed WordPress Care &amp; Maintenance</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            Never worry about broken plugins, missed security patches, or server downtime again. We provide hands-on WordPress management including staging-tested updates, daily verified off-site backups, 24/7 uptime monitoring, emergency malware cleanup, and dedicated monthly developer hours.
+        </p>
+    </section>
+
+    <!-- Core Capabilities Grid -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <!-- Pillar 1 -->
+        <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg bg-cyber-blue-bright/10 text-cyber-blue-bright flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl">published_with_changes</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">Staging-Tested Updates</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+                WordPress core, plugin, and theme updates are tested in an isolated staging environment before deploying to production, eliminating white-screen crashes and plugin conflicts.
+            </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg bg-cyber-blue-bright/10 text-cyber-blue-bright flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl">cloud_sync</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">Daily Verified Backups</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+                Automated daily off-site cloud backups with integrity validation. One-click 1-minute disaster recovery ensures your business data is never lost.
+            </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg bg-cyber-blue-bright/10 text-cyber-blue-bright flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl">network_ping</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">24/7 Uptime &amp; Speed Review</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+                Minute-by-minute ping monitoring alerts our technical team immediately if your server experiences downtime or performance degradation.
+            </p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg bg-cyber-blue-bright/10 text-cyber-blue-bright flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl">cleaning_services</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">Emergency Malware Cleanup</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+                If an unexpected breach occurs, our security team cleans backdoors, removes malicious code, and restores your site cleanly — included at zero extra charge.
+            </p>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg bg-cyber-blue-bright/10 text-cyber-blue-bright flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl">code_blocks</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">Dedicated Dev Hours</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+                Use your reserved 2 to 6+ monthly senior developer hours for landing page tweaks, theme customizations, speed optimization, or plugin integrations.
+            </p>
+        </div>
+
+        <!-- Pillar 6 -->
+        <div class="bg-surface-container-lowest border border-grid-line rounded-lg p-6 shadow-sm">
+            <div class="w-12 h-12 rounded-lg bg-cyber-blue-bright/10 text-cyber-blue-bright flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined text-2xl">shield</span>
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">WAF &amp; Hardening</h3>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+                Cloudflare / Sucuri Web Application Firewall configuration, IP access restrictions, login protection, and database prefix security hardening.
+            </p>
+        </div>
+    </section>
+
+    <!-- Bundled Plan CTA Banner -->
+    <section class="bg-primary text-terminal-white rounded-xl p-8 shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        <div>
+            <span class="text-xs font-label-caps text-alert-amber uppercase tracking-wider mb-2 block font-semibold">Bundled Management &amp; Care</span>
+            <h2 class="text-2xl font-bold text-terminal-white mb-2">Get Hands-on WordPress Care + VAPT + SEO Included</h2>
+            <p class="text-sm text-outline-variant max-w-2xl">
+                Our Growth ($799/mo) and Elite ($1,499/mo) plans include dedicated monthly developer time, staging updates, daily backups, and certified penetration testing.
+            </p>
+        </div>
+        <a href="pricing.html" class="bg-alert-amber text-primary font-bold px-6 py-3 rounded-lg hover:bg-alert-amber/90 transition-colors whitespace-nowrap shrink-0 text-sm">
+            View Bundled Pricing &rarr;
+        </a>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full mt-auto bg-cyber-blue-deep dark:bg-primary-container border-t border-grid-line pt-10 pb-8">
+    <div class="grid grid-cols-2 md:grid-cols-12 gap-6 md:gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+        <div class="col-span-2 md:col-span-4 flex flex-col gap-2 md:gap-4 mb-2 md:mb-0">
+            <div class="font-headline-md text-base md:text-headline-md text-terminal-white font-bold">
+                WP Secure Audit
+            </div>
+            <p class="font-body-sm text-xs md:text-body-sm text-surface-variant/70">
+                Manual, expert-led WordPress security auditing, VAPT, SEO growth, and hands-on platform management.
+            </p>
+            <p class="font-body-sm text-xs md:text-body-sm text-surface-variant/50">
+                © 2026 WP Secure Audit. All rights reserved.
+            </p>
+        </div>
+        <div class="col-span-1 md:col-span-2 flex flex-col gap-2 md:gap-3">
+            <p class="font-label-caps text-[10px] md:text-label-caps text-terminal-white/80 mb-0.5">Services</p>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-penetration-testing.html">Penetration Testing</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-security-audit.html">Security Audit</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-wordpress-seo.html">WordPress SEO</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="service-wordpress-management.html">WordPress Management</a>
+        </div>
+        <div class="col-span-1 md:col-span-2 flex flex-col gap-2 md:gap-3">
+            <p class="font-label-caps text-[10px] md:text-label-caps text-terminal-white/80 mb-0.5">Resources</p>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="blog.html">Blog</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="security-guides.html">Security Guides</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="security-advisories.html">Security Advisories</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="case-studies.html">Case Studies</a>
+        </div>
+        <div class="col-span-1 md:col-span-2 flex flex-col gap-2 md:gap-3">
+            <p class="font-label-caps text-[10px] md:text-label-caps text-terminal-white/80 mb-0.5">Company</p>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="about.html">About Us</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="pricing.html">Pricing</a>
+            <a class="font-body-sm text-xs md:text-body-sm text-surface-variant/70 hover:text-terminal-white transition-colors duration-300" href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
