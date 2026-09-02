@@ -259,249 +259,235 @@
 <main class="pt-28 md:pt-36 pb-margin-desktop px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <!-- Sidebar Navigation -->
 <aside class="hidden md:block md:col-span-3 sticky top-32 h-fit glass-panel p-6 rounded-lg">
-<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase tracking-wider">Audit Phases</h3>
+<h3 class="font-label-caps text-label-caps text-on-surface-variant mb-6 uppercase tracking-wider">Audit &amp; Onboarding Phases</h3>
 <ul class="space-y-4" id="sidebar-menu">
 <li>
-<a class="flex items-center gap-3 font-body-md text-body-md text-cyber-blue-deep hover:text-cyber-blue-bright transition-colors group" href="#phase-recon">
-<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="radar">radar</span>
-                        1. Reconnaissance
+<a class="flex items-center gap-3 font-body-md text-body-md text-cyber-blue-deep hover:text-cyber-blue-bright transition-colors group" href="#phase-vapt">
+<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="shield">shield</span>
+                        1. Security &amp; VAPT Audit
                     </a>
 </li>
 <li>
-<a class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant hover:text-cyber-blue-bright transition-colors group" href="#phase-vuln">
-<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="bug_report">bug_report</span>
-                        2. Vulnerability Assessment
+<a class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant hover:text-cyber-blue-bright transition-colors group" href="#phase-seo">
+<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="trending_up">trending_up</span>
+                        2. Technical SEO Audit
                     </a>
 </li>
 <li>
-<a class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant hover:text-cyber-blue-bright transition-colors group" href="#phase-manual">
-<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="terminal">terminal</span>
-                        3. Manual Exploitation
+<a class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant hover:text-cyber-blue-bright transition-colors group" href="#phase-care">
+<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="published_with_changes">published_with_changes</span>
+                        3. Managed Care Onboarding
                     </a>
 </li>
 <li>
-<a class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant hover:text-cyber-blue-bright transition-colors group" href="#phase-reporting">
-<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="article">article</span>
-                        4. Reporting &amp; Remediation
+<a class="flex items-center gap-3 font-body-md text-body-md text-on-surface-variant hover:text-cyber-blue-bright transition-colors group" href="#phase-retesting">
+<span class="material-symbols-outlined text-[20px] group-hover:text-cyber-blue-bright" data-icon="verified_user">verified_user</span>
+                        4. Continuous Protection
                     </a>
 </li>
 </ul>
 </aside>
+
 <!-- Content Area -->
 <div class="col-span-1 md:col-span-9 space-y-8 md:space-y-16">
+
 <!-- Hero Section -->
 <section class="mb-16">
 <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container-high rounded-full border border-grid-line mb-4">
 <span class="w-2 h-2 rounded-full bg-cyber-blue-bright animate-pulse"></span>
 <span class="font-label-caps text-label-caps text-cyber-blue-deep">Process Overview</span>
 </div>
-<h1 class="leading-snug font-headline-xl text-2xl md:text-headline-xl text-primary mb-2 md:mb-4">Our Technical Methodology</h1>
-<p class="font-body-lg text-xs md:text-body-lg text-on-surface-variant max-w-2xl">
-                    We employ a rigorous, multi-layered approach to WordPress security auditing, combining automated scanning with deep manual source code analysis to uncover vulnerabilities that automated tools miss.
-                </p>
+<h1 class="leading-snug font-headline-xl text-2xl md:text-headline-xl text-primary mb-2 md:mb-4">Our Full-Scope Audit &amp; Onboarding Methodology</h1>
+<p class="font-body-lg text-xs md:text-body-lg text-on-surface-variant max-w-3xl">
+    How we audit, optimize, and manage your WordPress site. We combine certified Security VAPT penetration testing, Core Web Vitals &amp; Technical SEO auditing, and staging-tested platform care into one seamless methodology.
+</p>
 </section>
-<!-- Phase 1: Reconnaissance -->
-<section class="scroll-mt-32" id="phase-recon">
+
+<!-- Phase 1: Security & VAPT Audit -->
+<section class="scroll-mt-32" id="phase-vapt">
 <div class="flex items-center gap-4 mb-6 pb-4 border-b border-grid-line">
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
-<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="radar">radar</span>
+<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="shield">shield</span>
 </div>
-<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">1. Reconnaissance &amp; Discovery</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">1. Security &amp; VAPT Penetration Testing Phase</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
 <p class="font-body-md text-body-md text-on-surface mb-4">
-                            The foundation of any thorough audit is understanding the target's footprint. We begin by mapping the entire WordPress ecosystem, identifying active themes, plugins, server configurations, and exposed endpoints.
-                        </p>
+    We map your entire WordPress installation, custom themes, active plugins, and REST API endpoints. Certified analysts manually test authentication bypasses, privilege escalation, SQL injection, and custom PHP business logic flaws.
+</p>
 <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Enumeration of users, themes, and plugins (active/inactive)
-                            </li>
+    Black-box external penetration testing &amp; authenticated white-box code review
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Identification of WAF (Web Application Firewall) presence
-                            </li>
+    Line-by-line static &amp; dynamic analysis of custom plugins and AJAX callbacks
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Analysis of publicly accessible directories and sensitive files (e.g., wp-config.php backups)
-                            </li>
+    Safe proof-of-concept validation to confirm vulnerabilities without live downtime
+</li>
 </ul>
 </div>
 <div class="bg-[#0F172A] rounded-lg p-4 border border-surface-tint/30 shadow-sm relative overflow-hidden">
 <div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-deep"></div>
 <div class="flex justify-between items-center mb-3">
-<span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
-<span class="font-label-caps text-label-caps text-cyber-blue-bright">WPScan / Nmap</span>
+<span class="font-label-caps text-label-caps text-terminal-white/70">Security Tools</span>
+<span class="font-label-caps text-label-caps text-cyber-blue-bright">Burp Suite / WPScan</span>
 </div>
-<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ wpscan --url https://target.com \
-  --enumerate vp,vt,tt,cb,dbe,u \
-  --api-token [REDACTED] \
-  --random-user-agent</code></pre>
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ wpscan --url https://target.com   --enumerate vp,vt,tt,cb,dbe,u   --api-token [REDACTED]</code></pre>
 </div>
 </div>
-<!-- Pro-Tip Card -->
 <div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
 <span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Security Insight</h4>
+<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Security Audit Deliverable</h4>
 <p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
-                            Inactive plugins represent a significant security risk. Even if deactivated, their files remain accessible on the server and can often be exploited directly if they contain vulnerabilities like unauthenticated file uploads.
-                        </p>
+    Delivered via Executive PDF report with CVSS vulnerability risk scoring and code-level remediation snippets for your developers.
+</p>
 </div>
 </div>
 </section>
 
-<!-- Phase 2: Vulnerability Assessment -->
-<section class="scroll-mt-32" id="phase-vuln">
+<!-- Phase 2: Technical & Growth SEO Audit -->
+<section class="scroll-mt-32" id="phase-seo">
 <div class="flex items-center gap-4 mb-6 pb-4 border-b border-grid-line">
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
-<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="bug_report">bug_report</span>
+<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="trending_up">trending_up</span>
 </div>
-<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">2. Vulnerability Assessment</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">2. Technical &amp; Growth SEO Audit Phase</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
 <p class="font-body-md text-body-md text-on-surface mb-4">
-                            We scan and analyze all components of your WordPress site to identify known vulnerabilities (CVEs), logical flaws, and access control issues. We cross-reference versions with security databases and inspect custom code.
-                        </p>
+    A secure website must perform fast and rank high. We audit your site's speed metrics, Core Web Vitals (LCP, INP, CLS), crawl budget, structured Schema markup, local directory citations, and AI Search / GEO readiness.
+</p>
 <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Check active plugin and theme versions against current CVE databases (WPScan API, VulnDB)
-                            </li>
+    Core Web Vitals &amp; render-blocking JavaScript/CSS speed audit
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Analyze server-side configurations, PHP settings, and SSL/TLS cipher suites
-                            </li>
+    Full-site on-page SEO review, meta tag hierarchy &amp; Schema entity validation
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Test for common configuration mistakes like directory listing and default database prefixes
-                            </li>
+    AI Search (GEO) optimization for ChatGPT, Perplexity &amp; Google AI Overviews
+</li>
 </ul>
 </div>
 <div class="bg-[#0F172A] rounded-lg p-4 border border-surface-tint/30 shadow-sm relative overflow-hidden">
 <div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-deep"></div>
 <div class="flex justify-between items-center mb-3">
-<span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
-<span class="font-label-caps text-label-caps text-cyber-blue-bright">Nuclei / WPScan API</span>
+<span class="font-label-caps text-label-caps text-terminal-white/70">SEO Audit Metrics</span>
+<span class="font-label-caps text-label-caps text-secure-green">Speed &amp; Rank Blueprint</span>
 </div>
-<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ nuclei -u https://target.com \
-  -t cves/ -t default-logins/ \
-  -severity critical,high,medium</code></pre>
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>[SEO_AUDIT] Core Web Vitals: LCP 0.8s | INP 45ms
+[SCHEMA] Organization &amp; Service JSON-LD validated
+[GEO] Entity authority indexed for AI Search.</code></pre>
 </div>
 </div>
-<!-- Pro-Tip Card -->
-<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
-<span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-secure-green">
+<span class="material-symbols-outlined text-secure-green" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Assessment Insight</h4>
+<h4 class="font-label-caps text-label-caps text-on-surface mb-1">SEO Audit Deliverable</h4>
 <p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
-                            Automated scanners are excellent for detecting known signatures, but they miss logical bypasses and zero-day flaws. A vulnerability assessment provides the structural scan, laying the groundwork for manual exploit testing.
-                        </p>
+    Includes a complete Technical SEO Fix Roadmap, keyword rank tracking setup, and Google Business Profile optimization plan.
+</p>
 </div>
 </div>
 </section>
 
-<!-- Phase 3: Manual Exploitation -->
-<section class="scroll-mt-32" id="phase-manual">
+<!-- Phase 3: Managed Care & Staging Onboarding -->
+<section class="scroll-mt-32" id="phase-care">
 <div class="flex items-center gap-4 mb-6 pb-4 border-b border-grid-line">
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
-<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="terminal">terminal</span>
+<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="published_with_changes">published_with_changes</span>
 </div>
-<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">3. Manual Exploitation &amp; Analysis</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">3. Managed Care &amp; Staging Onboarding Phase</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
 <p class="font-body-md text-body-md text-on-surface mb-4">
-                            Our certified security analysts attempt to safely exploit identified vulnerabilities. We go beyond automated reports to prove the real-world impact, verifying whether a vulnerability could lead to database access, remote code execution (RCE), or privilege escalation.
-                        </p>
+    We establish a dedicated staging environment for your WordPress site. All core, plugin, and theme updates are tested in staging before production deployment to eliminate plugin conflicts and white-screen crashes.
+</p>
 <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Safe, controlled exploitation of SQL injections (SQLi), Cross-Site Scripting (XSS), and Local File Inclusion (LFI)
-                            </li>
+    Isolated staging environment creation &amp; 1-click backup restoration testing
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Privilege escalation tests (bypassing subscriber limits to gain administrator privileges)
-                            </li>
+    24/7 minute-by-minute ping monitoring &amp; emergency malware cleanup protocol
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Custom code auditing to identify proprietary plugin logic flaws and authorization bypasses
-                            </li>
+    Cloudflare / Sucuri WAF firewall rules &amp; login hardening configuration
+</li>
 </ul>
 </div>
 <div class="bg-[#0F172A] rounded-lg p-4 border border-surface-tint/30 shadow-sm relative overflow-hidden">
 <div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-deep"></div>
 <div class="flex justify-between items-center mb-3">
-<span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
-<span class="font-label-caps text-label-caps text-cyber-blue-bright">Burp Suite / SQLmap</span>
+<span class="font-label-caps text-label-caps text-terminal-white/70">Care Workflow</span>
+<span class="font-label-caps text-label-caps text-alert-amber">Staging Verified</span>
 </div>
-<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>$ sqlmap -u "https://target.com/wp-admin/admin-ajax.php?action=vuln_ajax" \
-  --data="id=1" --cookie="wordpress_logged_in_..." \
-  --dbs --batch</code></pre>
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>[CARE_PLAN] Staging clone created &amp; verified
+[BACKUP] Daily off-site cloud sync active
+[WAF] Login protection &amp; IP rules enforced.</code></pre>
 </div>
 </div>
-<!-- Pro-Tip Card -->
-<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
-<span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-cyber-blue-bright">
+<span class="material-symbols-outlined text-cyber-blue-bright" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
 <div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Exploitation Insight</h4>
+<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Managed Care Deliverable</h4>
 <p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
-                            Proof-of-concept exploits are critical because they rule out false positives. By safely demonstrating the exploit vector, we help development teams understand exactly how an attacker would bypass their security controls.
-                        </p>
+    Direct onboarding into your monthly care tier (Growth or Elite) with reserved monthly senior developer hours for custom site tweaks.
+</p>
 </div>
 </div>
 </section>
 
-<!-- Phase 4: Reporting & Remediation -->
-<section class="scroll-mt-32" id="phase-reporting">
+<!-- Phase 4: Continuous Protection & Retesting -->
+<section class="scroll-mt-32" id="phase-retesting">
 <div class="flex items-center gap-4 mb-6 pb-4 border-b border-grid-line">
 <div class="w-12 h-12 rounded bg-surface-container-high flex items-center justify-center border border-grid-line">
-<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="article">article</span>
+<span class="material-symbols-outlined text-cyber-blue-deep text-[28px]" data-icon="verified_user">verified_user</span>
 </div>
-<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">4. Reporting &amp; Remediation</h2>
+<h2 class="font-headline-lg text-lg md:text-headline-lg text-primary font-bold">4. Continuous Protection &amp; Retesting</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-4 md:mb-8">
 <div>
 <p class="font-body-md text-body-md text-on-surface mb-4">
-                            We deliver a detailed, risk-rated security report featuring actionable remediation instructions. Every vulnerability is documented with step-by-step reproduction instructions, code-level recommendations, and validation procedures.
-                        </p>
+    After developers apply our security and technical SEO patches, we retest all identified vulnerabilities and confirm speed enhancements. Upon successful verification, we issue an official "WP Secure Audit Certified" badge.
+</p>
 <ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant">
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Comprehensive, executive-ready PDF report outlining risks, impacts, and CVSS scores
-                            </li>
+    Controlled patch retesting to verify 100% vulnerability resolution
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Precise code patches and configuration recipes (e.g., .htaccess rules, nginx configurations)
-                            </li>
+    Monthly keyword rank movements &amp; organic traffic trend reports
+</li>
 <li class="flex items-start gap-2">
 <span class="material-symbols-outlined text-[16px] text-cyber-blue-bright mt-0.5" data-icon="check_circle">check_circle</span>
-                                Post-remediation verification retests to confirm patches have been successfully applied
-                            </li>
+    Official "WP Secure Audit Certified" badge issued for client trust
+</li>
 </ul>
 </div>
 <div class="bg-[#0F172A] rounded-lg p-4 border border-surface-tint/30 shadow-sm relative overflow-hidden">
 <div class="absolute top-0 left-0 w-full h-1 bg-cyber-blue-deep"></div>
 <div class="flex justify-between items-center mb-3">
-<span class="font-label-caps text-label-caps text-terminal-white/70">Tool Highlight</span>
-<span class="font-label-caps text-label-caps text-cyber-blue-bright">Vulnerability Report</span>
+<span class="font-label-caps text-label-caps text-terminal-white/70">Certification</span>
+<span class="font-label-caps text-label-caps text-secure-green">Verified Secure</span>
 </div>
-<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>Finding: SQL Injection in Custom Ajax Plugin
-Severity: Critical (CVSS 9.8)
-Status: Pending Fix
-Remediation: Sanitize 'id' input using absint() or prepare() statements.</code></pre>
-</div>
-</div>
-<!-- Pro-Tip Card -->
-<div class="glass-panel p-3 md:p-6 rounded-lg flex items-start gap-3 md:gap-4 border-l-4 border-l-alert-amber">
-<span class="material-symbols-outlined text-alert-amber" data-icon="lightbulb" data-weight="fill" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
-<div>
-<h4 class="font-label-caps text-label-caps text-on-surface mb-1">Remediation Insight</h4>
-<p class="font-body-sm text-xs md:text-body-sm text-on-surface-variant">
-                            A security audit is only as good as its remediation. Our reports focus on developer-friendly code fixes and sysadmin-ready configuration changes rather than generic warnings, ensuring swift and accurate resolution.
-                        </p>
+<pre class="font-code-md text-xs md:text-code-md text-terminal-white/90 overflow-x-auto"><code>[VERIFIED] All CVSS vulnerabilities patched
+[CERTIFIED] Issued WP Secure Audit Badge
+[RECURRING] Quarterly VAPT retest scheduled.</code></pre>
 </div>
 </div>
 </section>
