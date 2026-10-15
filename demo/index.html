@@ -262,34 +262,70 @@
     <!-- Hero Header (Exact wpsecureaudit.com Section Layout) -->
     <section class="relative bg-grid-pattern py-margin-desktop overflow-hidden border-b border-grid-line dark:border-white/10">
         <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop max-w-4xl text-center md:text-left">
-            <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-container dark:bg-primary-container rounded-full border border-grid-line dark:border-white/10 mb-4">
-                <span class="w-2 h-2 rounded-full bg-cyber-blue-bright animate-pulse"></span>
-                <span class="font-label-caps text-label-caps text-primary dark:text-terminal-white uppercase">SMALL BUSINESS WEBSITE ACCELERATOR</span>
-            </div>
-            <h1 class="leading-snug font-headline-xl text-3xl md:text-headline-xl text-primary dark:text-terminal-white mb-3 md:mb-4">
-                Turnkey Website Demos for Small Businesses
-            </h1>
-            <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant leading-relaxed max-w-3xl">
-                Explore our ready-to-deploy, high-converting WordPress website demos designed for local service contractors and e-commerce stores. Delivered in <strong>7 business days</strong>, fully secured &amp; monitored by WP Secure Audit.
-            </p>
             
-            <!-- Quick Feature Badges -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8">
+            <!-- Urgency & Scarcity Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 bg-surface-container dark:bg-primary-container rounded-full border border-grid-line dark:border-white/10 mb-4">
+                <span class="w-2 h-2 rounded-full bg-alert-amber animate-pulse"></span>
+                <span class="font-label-caps text-label-caps text-primary dark:text-terminal-white uppercase font-bold tracking-wider">
+                    SPECIAL OFFER • ONLY 10 SMALL BUSINESSES ACCEPTED
+                </span>
+            </div>
+
+            <h1 class="leading-snug font-headline-xl text-3xl md:text-5xl lg:text-headline-xl text-primary dark:text-terminal-white mb-3 md:mb-4">
+                We Build Your Website for <span class="text-cyber-blue-bright">$0 Upfront</span>.
+            </h1>
+
+            <p class="font-body-lg text-body-lg text-on-surface-variant dark:text-surface-variant leading-relaxed max-w-3xl mb-4">
+                We will design and build a high-converting, mobile-ready WordPress website for small business owners with <strong>$0 upfront costs</strong>. You only pay <strong>$49/month</strong> for fast cloud hosting, continuous maintenance, ongoing security management, and basic SEO.
+            </p>
+
+            <div class="flex items-center gap-2 mb-8 font-code-md text-xs sm:text-sm text-on-surface-variant">
+                <span class="px-2.5 py-1 rounded bg-secure-green/10 text-secure-green font-bold">✓ No Setup Fees</span>
+                <span class="px-2.5 py-1 rounded bg-secure-green/10 text-secure-green font-bold">✓ No Hidden Charges</span>
+                <span class="px-2.5 py-1 rounded bg-cyber-blue-deep/10 text-cyber-blue-deep font-bold">✓ Pressure Washing &amp; E-Commerce</span>
+            </div>
+
+            <!-- 3 Ways to Claim CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-3 mb-8">
+                <a href="#" id="hero-jotform-btn" 
+                   class="bg-[#09132c] dark:bg-cyber-blue-bright text-terminal-white font-semibold text-xs lg:text-[13px] px-6 py-3.5 rounded hover:opacity-90 active:scale-95 transition-all inline-flex items-center gap-2 shadow-md">
+                    <span class="material-symbols-outlined text-base">assignment</span>
+                    <span>Fill Out Jotform to Claim</span>
+                </a>
+
+                <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20%240%20Upfront%20Website%20Offer%20(%2449%2Fmonth)%20for%20my%20business." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-[#25D366] text-white font-semibold text-xs lg:text-[13px] px-6 py-3.5 rounded hover:bg-[#128C7E] active:scale-95 transition-all inline-flex items-center gap-2 shadow-md">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.618-1.016-5.08-2.87-6.936C16.292 2.012 13.834 1 11.218 1 5.817 1 1.417 5.4 1.415 10.803c-.001 1.543.415 3.05 1.202 4.398l-.986 3.604 3.7-.972zm11.758-5.385c-.328-.164-1.942-.958-2.242-1.069-.3-.11-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.712.082-.328-.164-1.386-.511-2.64-1.63-1.032-.922-1.636-2.062-1.838-2.408-.202-.346-.022-.533.143-.697.148-.148.328-.384.492-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.778-1.011-2.435-.267-.641-.539-.553-.738-.563-.19-.01-.41-.012-.629-.012-.219 0-.575.082-.876.411-.3.328-1.15 1.123-1.15 2.738 0 1.616 1.178 3.178 1.342 3.397.164.219 2.318 3.538 5.617 4.962.784.339 1.397.541 1.874.693.788.251 1.504.216 2.07.131.63-.094 1.942-.794 2.215-1.562.274-.767.274-1.425.192-1.562-.081-.137-.3-.219-.628-.383z"/>
+                    </svg>
+                    <span>Send a DM on WhatsApp</span>
+                </a>
+
+                <a href="mailto:randhir@wpsecureaudit.com?subject=Claiming%20%240%20Upfront%20Website%20Offer%20(%2449%2Fmonth)&body=Hi%20Randhir%2C%0A%0AI%20am%20interested%20in%20claiming%20the%20%240%20Upfront%20Website%20Package%20(%2449%2Fmonth).%0A%0AMy%20Business%20Name%3A%0AMy%20Niche%20(Pressure%20Washing%20%2F%20E-Commerce)%3A%0AMy%20Phone%20%2F%20WhatsApp%3A%0A" 
+                   class="bg-white border border-grid-line text-primary hover:border-cyber-blue-bright font-semibold text-xs lg:text-[13px] px-5 py-3.5 rounded transition-all inline-flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-base">mail</span>
+                    <span>Reply to Claim</span>
+                </a>
+            </div>
+            
+            <!-- Quick Offer Value Pillars -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div class="glass-panel rounded-lg p-3 border border-grid-line flex items-center gap-2">
-                    <span class="material-symbols-outlined text-cyber-blue-bright text-xl">shield</span>
-                    <span class="font-code-md text-xs font-semibold text-primary">Hardened Security</span>
+                    <span class="material-symbols-outlined text-cyber-blue-bright text-xl">payments</span>
+                    <span class="font-code-md text-xs font-semibold text-primary">$0 Upfront Build</span>
                 </div>
                 <div class="glass-panel rounded-lg p-3 border border-grid-line flex items-center gap-2">
-                    <span class="material-symbols-outlined text-alert-amber text-xl">speed</span>
-                    <span class="font-code-md text-xs font-semibold text-primary">&lt; 1.2s Page Speed</span>
+                    <span class="material-symbols-outlined text-secure-green text-xl">cloud_done</span>
+                    <span class="font-code-md text-xs font-semibold text-primary">Hosting + Maintenance</span>
                 </div>
                 <div class="glass-panel rounded-lg p-3 border border-grid-line flex items-center gap-2">
-                    <span class="material-symbols-outlined text-secure-green text-xl">phone_iphone</span>
-                    <span class="font-code-md text-xs font-semibold text-primary">100% Mobile Ready</span>
+                    <span class="material-symbols-outlined text-alert-amber text-xl">trending_up</span>
+                    <span class="font-code-md text-xs font-semibold text-primary">Basic SEO Included</span>
                 </div>
                 <div class="glass-panel rounded-lg p-3 border border-grid-line flex items-center gap-2">
-                    <span class="material-symbols-outlined text-cyber-blue-bright text-xl">rocket_launch</span>
-                    <span class="font-code-md text-xs font-semibold text-primary">7-Day Turnaround</span>
+                    <span class="material-symbols-outlined text-critical-red text-xl">timer</span>
+                    <span class="font-code-md text-xs font-semibold text-primary">Only 10 Businesses</span>
                 </div>
             </div>
         </div>
@@ -364,11 +400,11 @@
                             <span class="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
 
-                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20get%20a%20website%20like%20Pressure%20Washing%20Demo%201%20(AquaPro)%20for%20my%20business." 
+                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20%240%20Upfront%20Offer%20(%2449%2Fmo)%20for%20the%20Pressure%20Washing%20Demo%201%20(AquaPro)%20design." 
                            target="_blank" rel="noopener noreferrer" 
                            class="bg-white border border-grid-line hover:border-cyber-blue-bright text-primary font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center transition-all inline-flex items-center justify-center gap-1.5">
                             <span class="material-symbols-outlined text-secure-green text-base">chat</span>
-                            <span>Claim This Design</span>
+                            <span>Claim for $0 Upfront</span>
                         </a>
                     </div>
                 </div>
@@ -422,11 +458,11 @@
                             <span class="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
 
-                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20get%20a%20website%20like%20Commercial%20Pressure%20Washing%20Demo%202%20(Apex)%20for%20my%20business." 
+                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20%240%20Upfront%20Offer%20(%2449%2Fmo)%20for%20the%20Commercial%20Pressure%20Washing%20Demo%202%20(Apex)%20design." 
                            target="_blank" rel="noopener noreferrer" 
                            class="bg-white border border-grid-line hover:border-cyber-blue-bright text-primary font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center transition-all inline-flex items-center justify-center gap-1.5">
                             <span class="material-symbols-outlined text-secure-green text-base">chat</span>
-                            <span>Claim This Design</span>
+                            <span>Claim for $0 Upfront</span>
                         </a>
                     </div>
                 </div>
@@ -480,11 +516,11 @@
                             <span class="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
 
-                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20get%20an%20e-commerce%20website%20like%20Demo%201%20(LuxeTrend)%20for%20my%20business." 
+                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20%240%20Upfront%20Offer%20(%2449%2Fmo)%20for%20the%20E-Commerce%20Demo%201%20(LuxeTrend)%20store." 
                            target="_blank" rel="noopener noreferrer" 
                            class="bg-white border border-grid-line hover:border-cyber-blue-bright text-primary font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center transition-all inline-flex items-center justify-center gap-1.5">
                             <span class="material-symbols-outlined text-secure-green text-base">chat</span>
-                            <span>Claim This Design</span>
+                            <span>Claim for $0 Upfront</span>
                         </a>
                     </div>
                 </div>
@@ -538,11 +574,11 @@
                             <span class="material-symbols-outlined text-sm">open_in_new</span>
                         </a>
 
-                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20get%20an%20e-commerce%20website%20like%20Demo%202%20(Artisan%20Direct)%20for%20my%20business." 
+                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20%240%20Upfront%20Offer%20(%2449%2Fmo)%20for%20the%20E-Commerce%20Demo%202%20(Artisan%20Direct)%20store." 
                            target="_blank" rel="noopener noreferrer" 
                            class="bg-white border border-grid-line hover:border-cyber-blue-bright text-primary font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center transition-all inline-flex items-center justify-center gap-1.5">
                             <span class="material-symbols-outlined text-secure-green text-base">chat</span>
-                            <span>Claim This Design</span>
+                            <span>Claim for $0 Upfront</span>
                         </a>
                     </div>
                 </div>
@@ -611,21 +647,88 @@
     <section class="py-12 md:py-margin-desktop bg-surface">
         <div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop max-w-4xl">
             
-            <!-- What is Included Banner -->
-            <div class="glass-panel rounded-xl border border-grid-line p-8 md:p-10 mb-12 bg-white text-center md:text-left">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div>
-                        <span class="font-label-caps text-label-caps text-secure-green font-bold uppercase">ENTERPRISE-GRADE PEACE OF MIND</span>
-                        <h2 class="font-headline-lg text-2xl md:text-3xl text-primary mt-1 mb-2">Everything Included in Your Website Package</h2>
-                        <p class="font-body-sm text-on-surface-variant max-w-xl">
-                            Unlike freelance designers who leave sites exposed to malware, our builds are verified by certified cybersecurity engineers. You own 100% of your website.
+            <!-- Official Small Business Offer Box -->
+            <div id="offer" class="glass-panel rounded-2xl border-2 border-cyber-blue-bright/30 p-8 md:p-12 mb-12 bg-white shadow-xl relative overflow-hidden">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-alert-amber/15 text-alert-amber font-code-md text-xs font-bold uppercase mb-4">
+                    <span class="w-2 h-2 rounded-full bg-alert-amber animate-pulse"></span>
+                    <span>COHORT LIMITED TO 10 BUSINESSES ONLY</span>
+                </div>
+
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-8 border-b border-grid-line">
+                    <div class="max-w-xl">
+                        <h2 class="font-headline-xl text-3xl md:text-4xl text-primary font-bold mb-3">
+                            $0 Upfront Website Build <br/><span class="text-cyber-blue-bright">+ $49/mo Complete Care</span>
+                        </h2>
+                        <p class="font-body-md text-on-surface-variant leading-relaxed">
+                            We create the website for small business owners for <strong>$0 upfront</strong> (focusing on Pressure Washing &amp; E-Commerce niches). You only pay <strong>$49/month</strong> covering fast hosting, continuous maintenance, ongoing management, and basic SEO.
                         </p>
                     </div>
-                    <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20small%20business%20website%20package." 
-                       target="_blank" rel="noopener noreferrer" 
-                       class="bg-[#09132c] text-terminal-white font-semibold text-xs lg:text-[13px] px-8 py-3.5 rounded hover:opacity-90 active:scale-95 transition-all whitespace-nowrap shadow-sm">
-                        Claim Website Package &rarr;
-                    </a>
+
+                    <!-- Pricing Callout -->
+                    <div class="glass-panel bg-surface-container-low p-6 rounded-xl border border-grid-line text-center min-w-[240px]">
+                        <p class="font-label-caps text-xs text-on-surface-variant font-semibold">UPFRONT SETUP FEE</p>
+                        <p class="font-headline-xl text-3xl font-extrabold text-on-surface-variant/40 line-through">$1,200</p>
+                        <p class="font-headline-xl text-4xl font-extrabold text-secure-green mb-1">$0 Down</p>
+                        <div class="pt-2 border-t border-grid-line">
+                            <span class="font-headline-md text-2xl font-bold text-primary">$49</span>
+                            <span class="font-body-sm text-xs text-on-surface-variant">/ month</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Breakdown Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8 font-body-sm text-xs sm:text-sm">
+                    <div class="p-3.5 rounded-lg bg-surface border border-grid-line flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span><strong>$0 Upfront Build:</strong> Custom tailored to your niche</span>
+                    </div>
+                    <div class="p-3.5 rounded-lg bg-surface border border-grid-line flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span><strong>Fast Cloud Hosting:</strong> High speed SSD hosting included</span>
+                    </div>
+                    <div class="p-3.5 rounded-lg bg-surface border border-grid-line flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span><strong>Security Hardening:</strong> VAPT tested by WP Secure Audit</span>
+                    </div>
+                    <div class="p-3.5 rounded-lg bg-surface border border-grid-line flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span><strong>Monthly Management:</strong> Ongoing content &amp; image updates</span>
+                    </div>
+                    <div class="p-3.5 rounded-lg bg-surface border border-grid-line flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span><strong>Basic SEO:</strong> Meta tags, sitemap &amp; Google indexing</span>
+                    </div>
+                    <div class="p-3.5 rounded-lg bg-surface border border-grid-line flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span><strong>Zero Setup Fees:</strong> No hidden charges, cancel anytime</span>
+                    </div>
+                </div>
+
+                <!-- 3 Ways to Claim Action Box -->
+                <div class="bg-surface-container-low p-6 rounded-xl border border-grid-line">
+                    <p class="font-label-caps text-xs font-bold text-primary uppercase mb-3 text-center md:text-left">
+                        3 WAYS TO CLAIM THIS OFFER (ONLY 10 SPOTS AVAILABLE):
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <a href="#" id="offer-jotform-btn" 
+                           class="bg-[#09132c] text-terminal-white font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center hover:opacity-90 active:scale-95 transition-all inline-flex items-center justify-center gap-1.5 shadow-sm">
+                            <span class="material-symbols-outlined text-base">assignment</span>
+                            <span>1. Fill Out Jotform</span>
+                        </a>
+
+                        <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20am%20sending%20a%20DM%20to%20claim%20the%20%240%20Upfront%20Website%20Offer%20(%2449%2Fmo)%20for%20my%20business." 
+                           target="_blank" rel="noopener noreferrer" 
+                           class="bg-[#25D366] text-white font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center hover:bg-[#128C7E] active:scale-95 transition-all inline-flex items-center justify-center gap-1.5 shadow-sm">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.618-1.016-5.08-2.87-6.936C16.292 2.012 13.834 1 11.218 1 5.817 1 1.417 5.4 1.415 10.803c-.001 1.543.415 3.05 1.202 4.398l-.986 3.604 3.7-.972zm11.758-5.385c-.328-.164-1.942-.958-2.242-1.069-.3-.11-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.712.082-.328-.164-1.386-.511-2.64-1.63-1.032-.922-1.636-2.062-1.838-2.408-.202-.346-.022-.533.143-.697.148-.148.328-.384.492-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.778-1.011-2.435-.267-.641-.539-.553-.738-.563-.19-.01-.41-.012-.629-.012-.219 0-.575.082-.876.411-.3.328-1.15 1.123-1.15 2.738 0 1.616 1.178 3.178 1.342 3.397.164.219 2.318 3.538 5.617 4.962.784.339 1.397.541 1.874.693.788.251 1.504.216 2.07.131.63-.094 1.942-.794 2.215-1.562.274-.767.274-1.425.192-1.562-.081-.137-.3-.219-.628-.383z"/></svg>
+                            <span>2. Send a WhatsApp DM</span>
+                        </a>
+
+                        <a href="mailto:randhir@wpsecureaudit.com?subject=Claiming%20%240%20Upfront%20Website%20Offer%20(%2449%2Fmonth)&body=Hi%20Randhir%2C%0A%0AI%20am%20replying%20to%20claim%20the%20%240%20Upfront%20Website%20Package%20(%2449%2Fmonth).%0A%0AMy%20Business%20Name%3A%0AMy%20Niche%20(Pressure%20Washing%20%2F%20E-Commerce)%3A%0AMy%20Phone%20%2F%20WhatsApp%3A%0A" 
+                           class="bg-white border border-grid-line hover:border-cyber-blue-bright text-primary font-semibold text-xs lg:text-[13px] px-4 py-3 rounded text-center transition-all inline-flex items-center justify-center gap-1.5">
+                            <span class="material-symbols-outlined text-base">mail</span>
+                            <span>3. Reply to Claim</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -736,8 +839,10 @@
 <!-- Interactive Scripts -->
 <script>
     // =========================================================================
-    // PASTE YOUR HOSTINGER TEMPORARY / STAGING URLS HERE:
+    // PASTE YOUR JOTFORM & HOSTINGER TEMPORARY / STAGING URLS HERE:
     // =========================================================================
+    const JOTFORM_URL = ""; // Paste your Jotform link here! (e.g. "https://form.jotform.com/...")
+
     const DEMO_LINKS = {
         // Pressure Washing Demos
         pressure1: "https://your-hostinger-temp-url-1.com",
@@ -749,6 +854,22 @@
     };
 
     document.addEventListener("DOMContentLoaded", () => {
+        // Bind Jotform Buttons
+        const jotformBtns = [document.getElementById('hero-jotform-btn'), document.getElementById('offer-jotform-btn')];
+        jotformBtns.forEach(btn => {
+            if (btn) {
+                if (JOTFORM_URL && JOTFORM_URL.startsWith('http')) {
+                    btn.href = JOTFORM_URL;
+                    btn.target = "_blank";
+                } else {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        window.open("https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%2C%20I%20want%20to%20claim%20the%20%240%20Upfront%20Website%20Offer%20(%2449%2Fmonth)%20for%20my%20business.", "_blank");
+                    });
+                }
+            }
+        });
+
         // Bind demo URLs
         for (const [key, url] of Object.entries(DEMO_LINKS)) {
             const btn = document.getElementById(`demo-url-${key}`);
