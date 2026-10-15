@@ -20,3 +20,12 @@ services:
       - TRUSTED_ORIGIN=https://wpsecureaudit.com
       - SERVER_PORT=9000
     restart: always
+
+  demo-web:
+    image: nginx:alpine
+    container_name: wpsecureaudit-demo
+    ports:
+      - "8082:80"
+    volumes:
+      - ./demo:/usr/share/nginx/html:ro
+    restart: always

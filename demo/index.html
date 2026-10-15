@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Live Demo Websites for Small Businesses | WP Secure Audit</title>
+    <meta content="Explore high-converting, mobile-ready WordPress website demos for pressure washing, e-commerce, and local service businesses. Delivered in 7 days, fully secured by WP Secure Audit." name="description"/>
+    <link href="https://demo.wpsecureaudit.com" rel="canonical"/>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    
+    <!-- Fonts & Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "cyber-blue-deep": "#070c1a",
+                        "cyber-card-bg": "#0c152e",
+                        "cyber-blue-bright": "#0066FF",
+                        "cyber-blue-glow": "#38bdf8",
+                        "accent-amber": "#FEA619",
+                        "secure-green": "#10B981",
+                        "terminal-white": "#FFFFFF",
+                        "surface-variant": "#94a3b8",
+                        "grid-line": "rgba(255, 255, 255, 0.08)"
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"],
+                        mono: ["JetBrains Mono", "monospace"]
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        .grid-bg {
+            background-color: #070c1a;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .glass-card {
+            background: rgba(12, 21, 46, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(0, 102, 255, 0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 16px 32px -8px rgba(0, 102, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FFFFFF 30%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-badge {
+            box-shadow: 0 0 15px rgba(0, 102, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="grid-bg text-slate-100 font-sans min-h-screen flex flex-col selection:bg-cyber-blue-bright selection:text-white">
+
+<!-- Top Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#070c1a]/90 backdrop-blur-md border-b border-grid-line">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        
+        <!-- Brand Logo & Badge -->
+        <div class="flex items-center gap-3">
+            <a href="https://wpsecureaudit.com" class="flex items-center gap-2 group">
+                <img src="assets/logo.svg" alt="WP Secure Audit" class="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"/>
+            </a>
+            <div class="hidden sm:flex items-center gap-2 border-l border-white/10 pl-3">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-semibold bg-cyber-blue-bright/15 text-cyber-blue-glow border border-cyber-blue-bright/30">
+                    LIVE DEMO SHOWCASE
+                </span>
+            </div>
+        </div>
+
+        <!-- Quick Nav & Action Buttons -->
+        <div class="flex items-center gap-3 sm:gap-4">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-surface-variant mr-2">
+                <a href="#demos" class="hover:text-white transition-colors">Browse Demos</a>
+                <a href="#offer" class="hover:text-white transition-colors">Special Offer</a>
+                <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQs</a>
+            </nav>
+
+            <a href="https://wa.me/917485891019?text=Hi%20WP%20Secure%20Audit%20Team%2C%20I%20am%20interested%20in%20a%20small%20business%20website%20from%20your%20demo%20showcase." 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-[#25D366]/15 hover:bg-[#25D366]/25 border border-[#25D366]/40 text-[#25D366] text-xs sm:text-sm font-semibold transition-all">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.625 1.451 5.403.002 9.803-4.394 9.806-9.799.002-2.618-1.016-5.08-2.87-6.936C16.292 2.012 13.834 1 11.218 1 5.817 1 1.417 5.4 1.415 10.803c-.001 1.543.415 3.05 1.202 4.398l-.986 3.604 3.7-.972zm11.758-5.385c-.328-.164-1.942-.958-2.242-1.069-.3-.11-.519-.164-.738.164-.219.328-.847 1.069-1.039 1.288-.192.219-.384.246-.712.082-.328-.164-1.386-.511-2.64-1.63-1.032-.922-1.636-2.062-1.838-2.408-.202-.346-.022-.533.143-.697.148-.148.328-.384.492-.575.164-.192.219-.328.328-.547.11-.219.055-.411-.027-.575-.082-.164-.738-1.778-1.011-2.435-.267-.641-.539-.553-.738-.563-.19-.01-.41-.012-.629-.012-.219 0-.575.082-.876.411-.3.328-1.15 1.123-1.15 2.738 0 1.616 1.178 3.178 1.342 3.397.164.219 2.318 3.538 5.617 4.962.784.339 1.397.541 1.874.693.788.251 1.504.216 2.07.131.63-.094 1.942-.794 2.215-1.562.274-.767.274-1.425.192-1.562-.081-.137-.3-.219-.628-.383z"/>
+                </svg>
+                <span>WhatsApp Us</span>
+            </a>
+
+            <a href="https://wpsecureaudit.com/contact.html" 
+               class="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-lg bg-cyber-blue-bright text-white text-xs sm:text-sm font-semibold hover:bg-blue-600 transition-all shadow-md shadow-cyber-blue-bright/20">
+                <span>Get a Quote</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Container -->
+<main class="flex-grow pt-28 pb-16">
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 text-center">
+        <!-- Pill Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyber-blue-bright/10 border border-cyber-blue-bright/30 text-cyber-blue-glow font-mono text-xs sm:text-sm mb-6 glow-badge">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>HIGH-CONVERTING TURNKEY SITES • LAUNCH IN 7 DAYS</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+            Turn More Website Visitors Into <span class="gradient-text">Paying Clients</span>
+        </h1>
+
+        <p class="text-base sm:text-xl text-surface-variant max-w-3xl mx-auto mb-10 leading-relaxed">
+            Pick a battle-tested demo tailored for your industry. We personalize it with your branding, integrate instant quote &amp; WhatsApp booking, and harden every layer with <strong>WP Secure Audit</strong> enterprise security.
+        </p>
+
+        <!-- 4 Key Pillars -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-5xl mx-auto mb-12">
+            <div class="glass-card rounded-xl p-4 text-left border border-white/5">
+                <span class="material-symbols-outlined text-cyber-blue-bright text-2xl mb-1">security</span>
+                <p class="text-xs font-mono uppercase text-surface-variant font-semibold">Security</p>
+                <p class="text-sm font-bold text-white">VAPT &amp; Malware Hardened</p>
+            </div>
+            <div class="glass-card rounded-xl p-4 text-left border border-white/5">
+                <span class="material-symbols-outlined text-accent-amber text-2xl mb-1">speed</span>
+                <p class="text-xs font-mono uppercase text-surface-variant font-semibold">Performance</p>
+                <p class="text-sm font-bold text-white">&lt; 1.2s Load Speeds</p>
+            </div>
+            <div class="glass-card rounded-xl p-4 text-left border border-white/5">
+                <span class="material-symbols-outlined text-secure-green text-2xl mb-1">chat</span>
+                <p class="text-xs font-mono uppercase text-surface-variant font-semibold">Conversion</p>
+                <p class="text-sm font-bold text-white">WhatsApp &amp; Instant Quote</p>
+            </div>
+            <div class="glass-card rounded-xl p-4 text-left border border-white/5">
+                <span class="material-symbols-outlined text-purple-400 text-2xl mb-1">rocket_launch</span>
+                <p class="text-xs font-mono uppercase text-surface-variant font-semibold">Turnaround</p>
+                <p class="text-sm font-bold text-white">Live In 7 Business Days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demos Section -->
+    <section id="demos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-24">
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10">
+            <button class="filter-btn active px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-cyber-blue-bright text-white shadow-md shadow-cyber-blue-bright/20" data-filter="all">
+                All Website Demos (4)
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-cyber-card-bg text-surface-variant hover:text-white border border-white/10" data-filter="pressure-washing">
+                🧼 Pressure Washing &amp; Exterior (2)
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-cyber-card-bg text-surface-variant hover:text-white border border-white/10" data-filter="ecommerce">
+                🛒 E-Commerce &amp; Online Stores (2)
+            </button>
+        </div>
+
+        <!-- Grid of Demos -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+            <!-- DEMO 1: Pressure Washing 1 -->
+            <div class="demo-card glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col" data-category="pressure-washing">
+                <!-- Browser Window Top Bar -->
+                <div class="bg-[#091124] px-4 py-3 border-b border-white/10 flex items-center justify-between">
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    </div>
+                    <div class="bg-black/30 rounded px-3 py-1 text-xs font-mono text-surface-variant flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-xs text-secure-green">lock</span>
+                        <span class="truncate max-w-[200px] sm:max-w-xs">demo-pressure-residential.wpsecureaudit.com</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-blue-500/15 text-blue-400 border border-blue-500/30">
+                        Demo 1
+                    </span>
+                </div>
+
+                <!-- Preview Area / Mock Visual -->
+                <div class="relative bg-gradient-to-br from-blue-950/60 via-slate-900 to-slate-950 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] border-b border-white/5">
+                    <div class="flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            Live Staging Available
+                        </span>
+                        <span class="text-xs font-mono text-surface-variant">Hostinger Server</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-mono uppercase tracking-wider text-accent-amber font-semibold mb-1">Residential &amp; Softwash</p>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">AquaPro Exterior Wash</h3>
+                        <p class="text-xs sm:text-sm text-surface-variant mt-1">High-converting residential power washing, driveway sealing &amp; gutter cleaning template.</p>
+                    </div>
+                </div>
+
+                <!-- Feature List -->
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2.5 mb-6 text-xs sm:text-sm text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Instant Quote Request Form</strong> with square footage calculation</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Interactive Before/After Slider</strong> showcasing real results</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Google Reviews &amp; Trust Badges</strong> to boost local credibility</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Floating WhatsApp &amp; Click-to-Call</strong> for immediate customer bookings</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-white/10">
+                        <a href="#" id="demo-url-pressure1" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyber-blue-bright text-white text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-cyber-blue-bright/20">
+                            <span>Open Live Demo</span>
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                        </a>
+
+                        <a href="https://wa.me/917485891019?text=Hi%2C%20I%20want%20to%20get%20a%20website%20like%20Pressure%20Washing%20Demo%201%20(AquaPro%20Exterior)%20for%20my%20business." 
+                           target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-sm font-semibold border border-white/15 transition-all">
+                            <span class="material-symbols-outlined text-emerald-400 text-base">chat</span>
+                            <span>Claim This Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEMO 2: Pressure Washing 2 -->
+            <div class="demo-card glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col" data-category="pressure-washing">
+                <!-- Browser Window Top Bar -->
+                <div class="bg-[#091124] px-4 py-3 border-b border-white/10 flex items-center justify-between">
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    </div>
+                    <div class="bg-black/30 rounded px-3 py-1 text-xs font-mono text-surface-variant flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-xs text-secure-green">lock</span>
+                        <span class="truncate max-w-[200px] sm:max-w-xs">demo-pressure-commercial.wpsecureaudit.com</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-blue-500/15 text-blue-400 border border-blue-500/30">
+                        Demo 2
+                    </span>
+                </div>
+
+                <!-- Preview Area / Mock Visual -->
+                <div class="relative bg-gradient-to-br from-cyan-950/60 via-slate-900 to-slate-950 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] border-b border-white/5">
+                    <div class="flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            Live Staging Available
+                        </span>
+                        <span class="text-xs font-mono text-surface-variant">Hostinger Server</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-mono uppercase tracking-wider text-cyber-blue-glow font-semibold mb-1">Commercial &amp; Fleet Washing</p>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Apex Surface Fleet Care</h3>
+                        <p class="text-xs sm:text-sm text-surface-variant mt-1">Engineered for commercial contractors, fleet wash contracts, warehouses, and HOA properties.</p>
+                    </div>
+                </div>
+
+                <!-- Feature List -->
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2.5 mb-6 text-xs sm:text-sm text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Commercial RFP / Proposal Downloader</strong> to capture B2B contracts</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Multi-Location Service Radius Map</strong> for regional coverage</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Compliance &amp; Insurance Badges</strong> (COI verification)</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Dedicated Fleet &amp; Roof Softwashing</strong> service funnels</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-white/10">
+                        <a href="#" id="demo-url-pressure2" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyber-blue-bright text-white text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-cyber-blue-bright/20">
+                            <span>Open Live Demo</span>
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                        </a>
+
+                        <a href="https://wa.me/917485891019?text=Hi%2C%20I%20want%20to%20get%20a%20website%20like%20Commercial%20Pressure%20Washing%20Demo%202%20(Apex%20Surface)%20for%20my%20business." 
+                           target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-sm font-semibold border border-white/15 transition-all">
+                            <span class="material-symbols-outlined text-emerald-400 text-base">chat</span>
+                            <span>Claim This Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEMO 3: E-Commerce 1 -->
+            <div class="demo-card glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col" data-category="ecommerce">
+                <!-- Browser Window Top Bar -->
+                <div class="bg-[#091124] px-4 py-3 border-b border-white/10 flex items-center justify-between">
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    </div>
+                    <div class="bg-black/30 rounded px-3 py-1 text-xs font-mono text-surface-variant flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-xs text-secure-green">lock</span>
+                        <span class="truncate max-w-[200px] sm:max-w-xs">demo-store-boutique.wpsecureaudit.com</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-purple-500/15 text-purple-400 border border-purple-500/30">
+                        Demo 1
+                    </span>
+                </div>
+
+                <!-- Preview Area / Mock Visual -->
+                <div class="relative bg-gradient-to-br from-purple-950/60 via-slate-900 to-slate-950 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] border-b border-white/5">
+                    <div class="flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            Live Staging Available
+                        </span>
+                        <span class="text-xs font-mono text-surface-variant">Hostinger Server</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-mono uppercase tracking-wider text-purple-400 font-semibold mb-1">Lifestyle &amp; Apparel Store</p>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">LuxeTrend Modern Store</h3>
+                        <p class="text-xs sm:text-sm text-surface-variant mt-1">Full-featured WooCommerce online store with ultra-fast catalog search &amp; mobile checkout.</p>
+                    </div>
+                </div>
+
+                <!-- Feature List -->
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2.5 mb-6 text-xs sm:text-sm text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>1-Click Mobile Checkout</strong> with Apple Pay, Google Pay &amp; Stripe</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Instant Live Search &amp; Product Filtering</strong> by size, price &amp; color</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Automated Order Tracking &amp; WhatsApp Notifications</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>PCI-DSS Hardened</strong> by WP Secure Audit security engineers</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-white/10">
+                        <a href="#" id="demo-url-ecommerce1" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyber-blue-bright text-white text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-cyber-blue-bright/20">
+                            <span>Open Live Demo</span>
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                        </a>
+
+                        <a href="https://wa.me/917485891019?text=Hi%2C%20I%20want%20to%20get%20an%20e-commerce%20website%20like%20Demo%201%20(LuxeTrend%20Store)%20for%20my%20business." 
+                           target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-sm font-semibold border border-white/15 transition-all">
+                            <span class="material-symbols-outlined text-emerald-400 text-base">chat</span>
+                            <span>Claim This Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DEMO 4: E-Commerce 2 -->
+            <div class="demo-card glass-card rounded-2xl overflow-hidden border border-white/10 flex flex-col" data-category="ecommerce">
+                <!-- Browser Window Top Bar -->
+                <div class="bg-[#091124] px-4 py-3 border-b border-white/10 flex items-center justify-between">
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                    </div>
+                    <div class="bg-black/30 rounded px-3 py-1 text-xs font-mono text-surface-variant flex items-center gap-1.5">
+                        <span class="material-symbols-outlined text-xs text-secure-green">lock</span>
+                        <span class="truncate max-w-[200px] sm:max-w-xs">demo-single-product.wpsecureaudit.com</span>
+                    </div>
+                    <span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold uppercase bg-purple-500/15 text-purple-400 border border-purple-500/30">
+                        Demo 2
+                    </span>
+                </div>
+
+                <!-- Preview Area / Mock Visual -->
+                <div class="relative bg-gradient-to-br from-amber-950/50 via-slate-900 to-slate-950 p-6 sm:p-8 flex flex-col justify-between min-h-[220px] border-b border-white/5">
+                    <div class="flex items-start justify-between">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                            Live Staging Available
+                        </span>
+                        <span class="text-xs font-mono text-surface-variant">Hostinger Server</span>
+                    </div>
+                    <div>
+                        <p class="text-xs font-mono uppercase tracking-wider text-accent-amber font-semibold mb-1">Direct-To-Consumer &amp; Specialty</p>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Artisan Direct Brand</h3>
+                        <p class="text-xs sm:text-sm text-surface-variant mt-1">High-converting single product showcase and specialty goods storefront with video stories.</p>
+                    </div>
+                </div>
+
+                <!-- Feature List -->
+                <div class="p-6 flex-grow flex flex-col justify-between">
+                    <div class="space-y-2.5 mb-6 text-xs sm:text-sm text-slate-300">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Storytelling &amp; Video Product Showcase</strong> sections</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Built-in Upsell &amp; Bundle Deals</strong> to maximize average order value</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Customer Photo &amp; Video Reviews Widget</strong></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-secure-green text-lg">check_circle</span>
+                            <span><strong>Abandoned Cart Recovery Integration</strong> for higher sales</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-white/10">
+                        <a href="#" id="demo-url-ecommerce2" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-cyber-blue-bright text-white text-sm font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-cyber-blue-bright/20">
+                            <span>Open Live Demo</span>
+                            <span class="material-symbols-outlined text-base">open_in_new</span>
+                        </a>
+
+                        <a href="https://wa.me/917485891019?text=Hi%2C%20I%20want%20to%20get%20an%20e-commerce%20website%20like%20Demo%202%20(Artisan%20Direct)%20for%20my%20business." 
+                           target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white text-sm font-semibold border border-white/15 transition-all">
+                            <span class="material-symbols-outlined text-emerald-400 text-base">chat</span>
+                            <span>Claim This Design</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Custom Niche Banner -->
+        <div class="mt-12 glass-card rounded-2xl p-6 sm:p-8 border border-white/10 text-center max-w-4xl mx-auto">
+            <span class="material-symbols-outlined text-accent-amber text-3xl mb-2">construction</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">Need a Website in Another Industry?</h3>
+            <p class="text-sm text-surface-variant max-w-2xl mx-auto mb-4">
+                We also have ready templates for <strong>Roofing, Plumbing, HVAC, Dental Clinics, Real Estate, Legal &amp; Auto Detailing</strong>. Tell us what you need and we will send a tailored live preview.
+            </p>
+            <a href="https://wa.me/917485891019?text=Hi%2C%20I%20need%20a%20website%20for%20a%20different%20niche%20(not%20listed%20on%20the%20demo%20page)." 
+               target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-2 text-sm font-semibold text-cyber-blue-bright hover:underline">
+                <span>Ask about your industry on WhatsApp &rarr;</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Special Offer Box -->
+    <section id="offer" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-24">
+        <div class="relative glass-card rounded-3xl p-8 sm:p-12 border-2 border-cyber-blue-bright/40 overflow-hidden shadow-2xl shadow-cyber-blue-bright/10">
+            <!-- Glow effect in background -->
+            <div class="absolute -top-32 -right-32 w-80 h-80 bg-cyber-blue-bright/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto text-center">
+                <span class="px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase bg-accent-amber/20 text-accent-amber border border-accent-amber/40 inline-block mb-4">
+                    LIMITED CLIENT ONBOARDING OFFER
+                </span>
+
+                <h2 class="text-3xl sm:text-5xl font-black text-white mb-4">
+                    Everything You Need to Succeed Online. <br/><span class="gradient-text">Zero Headaches. Full Ownership.</span>
+                </h2>
+
+                <p class="text-base sm:text-lg text-surface-variant mb-8 max-w-2xl mx-auto">
+                    Unlike typical web designers who leave you with an insecure site, our websites are built by <strong>cybersecurity engineers</strong>. You own 100% of the site and your data.
+                </p>
+
+                <!-- What's included checklist -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-left max-w-3xl mx-auto mb-10 text-xs sm:text-sm">
+                    <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span>Complete WordPress Custom Build</span>
+                    </div>
+                    <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span>Full WP Secure Audit Hardening</span>
+                    </div>
+                    <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span>100% Mobile &amp; Tablet Responsive</span>
+                    </div>
+                    <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span>Direct WhatsApp &amp; Booking Forms</span>
+                    </div>
+                    <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span>Domain &amp; SSL Connection Setup</span>
+                    </div>
+                    <div class="bg-black/30 p-3.5 rounded-xl border border-white/5 flex items-start gap-2.5">
+                        <span class="material-symbols-outlined text-secure-green text-base mt-0.5">check_circle</span>
+                        <span>30 Days Post-Launch Support</span>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/917485891019?text=Hi%2C%20I%20want%20to%20claim%20the%20Small%20Business%20Website%20Package%20offer." 
+                       target="_blank" rel="noopener noreferrer" 
+                       class="w-full sm:w-auto px-8 py-4 rounded-xl bg-cyber-blue-bright hover:bg-blue-600 text-white font-bold text-base transition-all shadow-xl shadow-cyber-blue-bright/30 flex items-center justify-center gap-2">
+                        <span>Claim Your Website Package Now</span>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                    
+                    <a href="https://wpsecureaudit.com/contact.html" 
+                       class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white/5 hover:bg-white/10 text-white font-semibold text-sm border border-white/15 transition-all text-center">
+                        Request a Scoped Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 scroll-mt-24">
+        <div class="text-center mb-12">
+            <span class="text-xs font-mono text-cyber-blue-bright uppercase font-bold tracking-wider">SIMPLE 3-STEP PROCESS</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">How We Launch Your Website In 7 Days</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 relative">
+                <span class="text-4xl font-mono font-black text-cyber-blue-bright/30 absolute top-4 right-6">01</span>
+                <span class="material-symbols-outlined text-cyber-blue-bright text-3xl mb-4">touch_app</span>
+                <h3 class="text-xl font-bold text-white mb-2">1. Pick Your Demo</h3>
+                <p class="text-sm text-surface-variant leading-relaxed">
+                    Choose one of the demo designs above or tell us your custom layout preferences on WhatsApp.
+                </p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 relative">
+                <span class="text-4xl font-mono font-black text-accent-amber/30 absolute top-4 right-6">02</span>
+                <span class="material-symbols-outlined text-accent-amber text-3xl mb-4">edit_document</span>
+                <h3 class="text-xl font-bold text-white mb-2">2. Personalize Content</h3>
+                <p class="text-sm text-surface-variant leading-relaxed">
+                    Send us your logo, business phone, service areas, and photos. We write the copy and build your custom pages.
+                </p>
+            </div>
+
+            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 relative">
+                <span class="text-4xl font-mono font-black text-secure-green/30 absolute top-4 right-6">03</span>
+                <span class="material-symbols-outlined text-secure-green text-3xl mb-4">verified</span>
+                <h3 class="text-xl font-bold text-white mb-2">3. Secure &amp; Go Live</h3>
+                <p class="text-sm text-surface-variant leading-relaxed">
+                    We harden the code, connect your domain &amp; SSL, test all forms, and hand over 100% full admin control.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-24">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+            <div class="glass-card rounded-xl p-5 border border-white/5">
+                <h3 class="font-bold text-white text-base mb-1">Can I use my own domain name (e.g. mybusiness.com)?</h3>
+                <p class="text-sm text-surface-variant">Yes, 100%. We will point and configure your custom domain name with free SSL and DNS optimization.</p>
+            </div>
+
+            <div class="glass-card rounded-xl p-5 border border-white/5">
+                <h3 class="font-bold text-white text-base mb-1">Do I own the website after launch?</h3>
+                <p class="text-sm text-surface-variant">Yes! Unlike Wix or Squarespace where you are locked in, your site is built on WordPress. You have 100% ownership of your database, content, and files.</p>
+            </div>
+
+            <div class="glass-card rounded-xl p-5 border border-white/5">
+                <h3 class="font-bold text-white text-base mb-1">What makes this different from cheap freelance web designers?</h3>
+                <p class="text-sm text-surface-variant">Most freelancers install unverified nulled plugins that leave WordPress vulnerable to malware within weeks. Because we are a cybersecurity division (WP Secure Audit), every site is penetration tested, hardened, and built for speed.</p>
+            </div>
+
+            <div class="glass-card rounded-xl p-5 border border-white/5">
+                <h3 class="font-bold text-white text-base mb-1">Can I customize colors, logos, and services?</h3>
+                <p class="text-sm text-surface-variant">Absolutely! The demos represent the layout framework. We customize every color, font, logo, phone number, and service to match your exact brand.</p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w-full bg-[#050813] border-t border-grid-line py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        
+        <div class="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+            <a href="https://wpsecureaudit.com">
+                <img src="assets/logo.svg" alt="WP Secure Audit" class="h-8 w-auto object-contain"/>
+            </a>
+            <p class="text-xs text-surface-variant/70">
+                A unit of <strong>SURAKSHACLOUD PVT LTD</strong>. All rights reserved.
+            </p>
+        </div>
+
+        <div class="flex items-center gap-6 text-xs text-surface-variant">
+            <a href="https://wpsecureaudit.com" class="hover:text-white transition-colors">Main Website</a>
+            <a href="https://wpsecureaudit.com/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="https://wpsecureaudit.com/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a>
+            <a href="https://wa.me/917485891019" target="_blank" rel="noopener noreferrer" class="hover:text-[#25D366] transition-colors">WhatsApp</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Easy URL Configuration Script -->
+<script>
+    // =========================================================================
+    // PASTE YOUR HOSTINGER TEMPORARY / STAGING URLS HERE:
+    // =========================================================================
+    const DEMO_LINKS = {
+        // Pressure Washing Demos
+        pressure1: "https://your-hostinger-temp-url-1.com",
+        pressure2: "https://your-hostinger-temp-url-2.com",
+        
+        // E-Commerce Demos
+        ecommerce1: "https://your-hostinger-temp-url-3.com",
+        ecommerce2: "https://your-hostinger-temp-url-4.com"
+    };
+
+    // Auto-bind to live demo buttons if URLs are provided
+    document.addEventListener("DOMContentLoaded", () => {
+        for (const [key, url] of Object.entries(DEMO_LINKS)) {
+            const btn = document.getElementById(`demo-url-${key}`);
+            if (btn && url && url !== `https://your-hostinger-temp-url-${key.slice(-1)}.com`) {
+                btn.href = url;
+            } else if (btn) {
+                // If placeholder, show friendly alert until URL is updated
+                btn.addEventListener('click', (e) => {
+                    if (btn.getAttribute('href') === '#') {
+                        e.preventDefault();
+                        alert('Live staging link is currently being connected! Chat with us on WhatsApp to view the latest live preview.');
+                    }
+                });
+            }
+        }
+
+        // Category Filter Handling
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.demo-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-cyber-blue-bright', 'text-white', 'shadow-md', 'shadow-cyber-blue-bright/20');
+                    b.classList.add('bg-cyber-card-bg', 'text-surface-variant');
+                });
+
+                btn.classList.add('bg-cyber-blue-bright', 'text-white', 'shadow-md', 'shadow-cyber-blue-bright/20');
+                btn.classList.remove('bg-cyber-card-bg', 'text-surface-variant');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
